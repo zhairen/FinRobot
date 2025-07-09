@@ -1,5 +1,6 @@
 {
     "python.analysis.extraPaths": [
         "./FinNLP"
-    ]
+    ],
+    "editor.fontSize": 21
 }
