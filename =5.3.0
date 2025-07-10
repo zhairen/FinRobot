@@ -1,0 +1,37 @@
+Channels:
+ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | done
+Solving environment: - done
+
+## Package Plan ##
+
+  environment location: /root/anaconda3/envs/fintech
+
+  added / updated specs:
+    - cachetools
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    cachetools-5.5.1           |  py310h06a4308_0          29 KB  https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+    ------------------------------------------------------------
+                                           Total:          29 KB
+
+The following NEW packages will be INSTALLED:
+
+  cachetools         anaconda/pkgs/main/linux-64::cachetools-5.5.1-py310h06a4308_0 
+
+
+Proceed ([y]/n)? 
+
+Downloading and Extracting Packages: ...working...cachetools-5.5.1     | 29 KB     |            |   0% cachetools-5.5.1     | 29 KB     | #####5     |  56% cachetools-5.5.1     | 29 KB     | ########## | 100% cachetools-5.5.1     | 29 KB     | ########## | 100%                                                       done
+Preparing transaction: | done
+Verifying transaction: - \ | done
+Executing transaction: - done

@@ -1,6 +1,8 @@
 {
     "python.analysis.extraPaths": [
-        "./FinNLP"
+        "./FinNLP",
+        "./myfinrobot/strategy_factory"
     ],
-    "editor.fontSize": 21
+    "editor.fontSize": 22,
+    "editor.fontLigatures": false
 }

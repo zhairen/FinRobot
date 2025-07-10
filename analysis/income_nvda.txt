@@ -1,0 +1,59 @@
+Income statement:
+2025-01-31    2024-01-31    2023-01-31    2022-01-31
+Tax Effect Of Unusual Items                                 0.000000e+00  0.000000e+00 -2.841300e+08  0.000000e+00
+Tax Rate For Calcs                                          1.330000e-01  1.200000e-01  2.100000e-01  1.900000e-02
+Normalized EBITDA                                           8.613700e+10  3.558300e+10  7.339000e+09  1.135100e+10
+Total Unusual Items                                         0.000000e+00  0.000000e+00 -1.353000e+09  0.000000e+00
+Total Unusual Items Excluding Goodwill                      0.000000e+00  0.000000e+00 -1.353000e+09  0.000000e+00
+Net Income From Continuing Operation Net Minority Interest  7.288000e+10  2.976000e+10  4.368000e+09  9.752000e+09
+Reconciled Depreciation                                     1.864000e+09  1.508000e+09  1.543000e+09  1.174000e+09
+Reconciled Cost Of Revenue                                  3.263900e+10  1.662100e+10  1.161800e+10  9.439000e+09
+EBITDA                                                      8.613700e+10  3.558300e+10  5.986000e+09  1.135100e+10
+EBIT                                                        8.427300e+10  3.407500e+10  4.443000e+09  1.017700e+10
+Net Interest Income                                         1.539000e+09  6.090000e+08  5.000000e+06 -2.070000e+08
+Interest Expense                                            2.470000e+08  2.570000e+08  2.620000e+08  2.360000e+08
+Interest Income                                             1.786000e+09  8.660000e+08  2.670000e+08  2.900000e+07
+Normalized Income                                           7.288000e+10  2.976000e+10  5.436870e+09  9.752000e+09
+Net Income From Continuing And Discontinued Operation       7.288000e+10  2.976000e+10  4.368000e+09  9.752000e+09
+Total Expenses                                              4.904400e+10  2.795000e+10  2.139700e+10  1.687300e+10
+Total Operating Income As Reported                          8.145300e+10  3.297200e+10  4.224000e+09  1.004100e+10
+Diluted Average Shares                                      2.480400e+10  2.494000e+10  2.507000e+10  2.535000e+10
+Basic Average Shares                                        2.455500e+10  2.469000e+10  2.487000e+10  2.496000e+10
+Diluted EPS                                                 2.940000e+00  1.190000e+00  1.740000e-01  3.850000e-01
+Basic EPS                                                   2.970000e+00  1.210000e+00  1.760000e-01  3.910000e-01
+Diluted NI Availto Com Stockholders                         7.288000e+10  2.976000e+10  4.368000e+09  9.752000e+09
+Net Income Common Stockholders                              7.288000e+10  2.976000e+10  4.368000e+09  9.752000e+09
+Net Income                                                  7.288000e+10  2.976000e+10  4.368000e+09  9.752000e+09
+Net Income Including Noncontrolling Interests               7.288000e+10  2.976000e+10  4.368000e+09  9.752000e+09
+Net Income Continuous Operations                            7.288000e+10  2.976000e+10  4.368000e+09  9.752000e+09
+Tax Provision                                               1.114600e+10  4.058000e+09 -1.870000e+08  1.890000e+08
+Pretax Income                                               8.402600e+10  3.381800e+10  4.181000e+09  9.941000e+09
+Other Income Expense                                        1.034000e+09  2.370000e+08 -1.401000e+09  1.070000e+08
+Other Non Operating Income Expenses                         1.034000e+09  2.370000e+08 -4.800000e+07  1.070000e+08
+Special Income Charges                                      0.000000e+00  0.000000e+00 -1.353000e+09  0.000000e+00
+Restructuring And Mergern Acquisition                       0.000000e+00  0.000000e+00  1.353000e+09  0.000000e+00
+Net Non Operating Interest Income Expense                   1.539000e+09  6.090000e+08  5.000000e+06 -2.070000e+08
+Interest Expense Non Operating                              2.470000e+08  2.570000e+08  2.620000e+08  2.360000e+08
+Interest Income Non Operating                               1.786000e+09  8.660000e+08  2.670000e+08  2.900000e+07
+Operating Income                                            8.145300e+10  3.297200e+10  5.577000e+09  1.004100e+10
+Operating Expense                                           1.640500e+10  1.132900e+10  9.779000e+09  7.434000e+09
+Research And Development                                    1.291400e+10  8.675000e+09  7.339000e+09  5.268000e+09
+Selling General And Administration                          3.491000e+09  2.654000e+09  2.440000e+09  2.166000e+09
+Gross Profit                                                9.785800e+10  4.430100e+10  1.535600e+10  1.747500e+10
+Cost Of Revenue                                             3.263900e+10  1.662100e+10  1.161800e+10  9.439000e+09
+Total Revenue                                               1.304970e+11  6.092200e+10  2.697400e+10  2.691400e+10
+Operating Revenue                                           1.304970e+11  6.092200e+10  2.697400e+10  2.691400e+10
+
+Resource: Failed to retrieve data: 401
+
+Instruction: 
+Conduct a comprehensive analysis of the company's income statement for the current fiscal year. 
+Start with an overall revenue record, including Year-over-Year or Quarter-over-Quarter comparisons, 
+and break down revenue sources to identify primary contributors and trends. Examine the Cost of 
+Goods Sold for potential cost control issues. Review profit margins such as gross, operating, 
+and net profit margins to evaluate cost efficiency, operational effectiveness, and overall profitability. 
+Analyze Earnings Per Share to understand investor perspectives. Compare these metrics with historical 
+data and industry or competitor benchmarks to identify growth patterns, profitability trends, and 
+operational challenges. The output should be a strategic overview of the company’s financial health 
+in a single paragraph, less than 130 words, summarizing the previous analysis into 4-5 key points under 
+respective subheadings with specific discussion and strong data support.

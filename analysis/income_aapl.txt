@@ -1,0 +1,55 @@
+Income statement:
+2024-09-30    2023-09-30    2022-09-30    2021-09-30    2020-09-30
+Tax Effect Of Unusual Items                                 0.000000e+00  0.000000e+00  0.000000e+00  0.000000e+00           NaN
+Tax Rate For Calcs                                          2.410000e-01  1.470000e-01  1.620000e-01  1.330000e-01           NaN
+Normalized EBITDA                                           1.346610e+11  1.258200e+11  1.305410e+11  1.231360e+11           NaN
+Net Income From Continuing Operation Net Minority Interest  9.373600e+10  9.699500e+10  9.980300e+10  9.468000e+10           NaN
+Reconciled Depreciation                                     1.144500e+10  1.151900e+10  1.110400e+10  1.128400e+10           NaN
+Reconciled Cost Of Revenue                                  2.103520e+11  2.141370e+11  2.235460e+11  2.129810e+11           NaN
+EBITDA                                                      1.346610e+11  1.258200e+11  1.305410e+11  1.231360e+11           NaN
+EBIT                                                        1.232160e+11  1.143010e+11  1.194370e+11  1.118520e+11           NaN
+Net Interest Income                                                  NaN -1.830000e+08 -1.060000e+08  1.980000e+08  8.900000e+08
+Interest Expense                                                     NaN  3.933000e+09  2.931000e+09  2.645000e+09  2.873000e+09
+Interest Income                                                      NaN  3.750000e+09  2.825000e+09  2.843000e+09  3.763000e+09
+Normalized Income                                           9.373600e+10  9.699500e+10  9.980300e+10  9.468000e+10           NaN
+Net Income From Continuing And Discontinued Operation       9.373600e+10  9.699500e+10  9.980300e+10  9.468000e+10           NaN
+Total Expenses                                              2.678190e+11  2.689840e+11  2.748910e+11  2.568680e+11           NaN
+Total Operating Income As Reported                          1.232160e+11  1.143010e+11  1.194370e+11  1.089490e+11           NaN
+Diluted Average Shares                                      1.540810e+10  1.581255e+10  1.632582e+10  1.686492e+10           NaN
+Basic Average Shares                                        1.534378e+10  1.574423e+10  1.621596e+10  1.670127e+10           NaN
+Diluted EPS                                                 6.080000e+00  6.130000e+00  6.110000e+00  5.610000e+00           NaN
+Basic EPS                                                   6.110000e+00  6.160000e+00  6.150000e+00  5.670000e+00           NaN
+Diluted NI Availto Com Stockholders                         9.373600e+10  9.699500e+10  9.980300e+10  9.468000e+10           NaN
+Net Income Common Stockholders                              9.373600e+10  9.699500e+10  9.980300e+10  9.468000e+10           NaN
+Net Income                                                  9.373600e+10  9.699500e+10  9.980300e+10  9.468000e+10           NaN
+Net Income Including Noncontrolling Interests               9.373600e+10  9.699500e+10  9.980300e+10  9.468000e+10           NaN
+Net Income Continuous Operations                            9.373600e+10  9.699500e+10  9.980300e+10  9.468000e+10           NaN
+Tax Provision                                               2.974900e+10  1.674100e+10  1.930000e+10  1.452700e+10           NaN
+Pretax Income                                               1.234850e+11  1.137360e+11  1.191030e+11  1.092070e+11           NaN
+Other Income Expense                                        2.690000e+08 -5.650000e+08 -3.340000e+08  6.000000e+07           NaN
+Other Non Operating Income Expenses                         2.690000e+08 -5.650000e+08 -3.340000e+08  6.000000e+07           NaN
+Net Non Operating Interest Income Expense                            NaN -1.830000e+08 -1.060000e+08  1.980000e+08  8.900000e+08
+Interest Expense Non Operating                                       NaN  3.933000e+09  2.931000e+09  2.645000e+09  2.873000e+09
+Interest Income Non Operating                                        NaN  3.750000e+09  2.825000e+09  2.843000e+09  3.763000e+09
+Operating Income                                            1.232160e+11  1.143010e+11  1.194370e+11  1.089490e+11           NaN
+Operating Expense                                           5.746700e+10  5.484700e+10  5.134500e+10  4.388700e+10           NaN
+Research And Development                                    3.137000e+10  2.991500e+10  2.625100e+10  2.191400e+10           NaN
+Selling General And Administration                          2.609700e+10  2.493200e+10  2.509400e+10  2.197300e+10           NaN
+Gross Profit                                                1.806830e+11  1.691480e+11  1.707820e+11  1.528360e+11           NaN
+Cost Of Revenue                                             2.103520e+11  2.141370e+11  2.235460e+11  2.129810e+11           NaN
+Total Revenue                                               3.910350e+11  3.832850e+11  3.943280e+11  3.658170e+11           NaN
+Operating Revenue                                           3.910350e+11  3.832850e+11  3.943280e+11  3.658170e+11           NaN
+
+Resource: None
+
+Instruction: 
+Conduct a comprehensive analysis of the company's income statement for the current fiscal year. 
+Start with an overall revenue record, including Year-over-Year or Quarter-over-Quarter comparisons, 
+and break down revenue sources to identify primary contributors and trends. Examine the Cost of 
+Goods Sold for potential cost control issues. Review profit margins such as gross, operating, 
+and net profit margins to evaluate cost efficiency, operational effectiveness, and overall profitability. 
+Analyze Earnings Per Share to understand investor perspectives. Compare these metrics with historical 
+data and industry or competitor benchmarks to identify growth patterns, profitability trends, and 
+operational challenges. The output should be a strategic overview of the company’s financial health 
+in a single paragraph, less than 130 words, summarizing the previous analysis into 4-5 key points under 
+respective subheadings with specific discussion and strong data support.

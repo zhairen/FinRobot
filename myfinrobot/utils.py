@@ -33,7 +33,7 @@ def register_keys_from_json(file_path):
         keys = json.load(f)
     for key, value in keys.items():
         os.environ[key] = value
-
+    return keys
 
 def decorate_all_methods(decorator):
     def class_decorator(cls):
@@ -81,3 +81,13 @@ def get_next_weekday(date):
 #         trigger=ConversableAgent
 #         )
 #     return manager
+
+import os
+def load_api_keys():
+    project_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+    config_path = os.path.join(project_root, 'FinRobot','config_api_keys')
+
+    #print('config path ',os.path.exists(config_path) )
+    jsonkeys  = register_keys_from_json(config_path)
+    #print("utils API Keys Loaded:", jsonkeys)
+    return jsonkeys
