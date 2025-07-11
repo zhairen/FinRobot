@@ -6,7 +6,7 @@ Created Time: 2025-07-10 23:21:09
 Author: Coin Lau (jinxinliu@gmail.com)
 Description: 
 """
-from ..model_gateways import ModelGateway
+from ..agent_engine import ModelGateway
 import openai
 
 class OpenAIGateway(ModelGateway):

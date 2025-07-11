@@ -26,4 +26,5 @@
 - 设计模式设计agents，了解agents原有结构，支持多种模式，配置实现分开，支持依赖注入 dataengine和strategyengine
 - ds代码开发设计模式
 - 类图，文件结构图 
+- 根据现在的文件结构、类图和功能需求，更正完善代码。Dataengine和srategyengine依赖注入，支持多种大模型。尽可能引用现在的agent_library,prompts,utils,workflow里现有的实现即可。更正错误和完善代码，除agent_library,prompts,utils,workflow 4个文件外，该agents文件夹下所有文件。
 
