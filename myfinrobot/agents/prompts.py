@@ -39,3 +39,18 @@ order_template = dedent(
     If the task cannot be done currently or need assistance from other members, report the reasons or requirements to group leader ended with TERMINATE. 
 """
 )
+
+
+# 新增分析提示模板
+analysis_prompt_template = dedent(
+    """
+    [分析任务模板]
+    当前参数：{parameters}
+    数据摘要：{data_summary}
+    请完成以下分析步骤：
+    1. 数据清洗与预处理
+    2. 关键指标计算
+    3. 生成可视化图表
+    4. 撰写分析报告
+    """
+)

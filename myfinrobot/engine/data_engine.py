@@ -17,7 +17,16 @@ class DataEngine:
     """智能数据引擎"""
     def __init__(self, cache_enabled=True):
         self.cache = TTLCache(maxsize=1000, ttl=3600) if cache_enabled else None
-    
+        
+    def get_data(self, parameters):
+        """
+        实现数据获取逻辑
+        返回: DataFrame/List/Dict等数据容器
+        """
+        # 具体实现代码
+        return self.get_historical_data("AAPL",start_date= "2025-07-01",end_date= "2025-07-31")
+
+        
     def get_historical_data(self, symbol: str, **kwargs) -> pd.DataFrame:
         """智能获取历史数据"""
         source = DataSourceFactory.get_strategy_source('historical').create_stock_source()

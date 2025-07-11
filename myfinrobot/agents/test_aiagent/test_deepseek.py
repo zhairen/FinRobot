@@ -22,7 +22,7 @@ engine = AgentEngine()
 # 注册DeepSeek模型网关（关键步骤）
 engine.register_model(
     name="deepseek",  # 与Task.model_type对应
-    gateway=DeepSeekGateway(api_key="your_deepseek_api_key")
+    gateway=DeepSeekGateway(api_key="sk-2272aa47f3b3484aa0c75511ac65ee43")
 )
 
 # 注册数据分析代理工厂（已有代码）
@@ -35,11 +35,11 @@ engine.register_agent_factory(
 task = Task(
     type="data_analysis",  # 对应代理工厂类型
     parameters={
-        "data_engine_config": {"api_key": "finnhub_key"},  # DataEngine配置
+        "data_engine_config": {"FINNHUB_API_KEY": "d1hg831r01qsvr2a073gd1hg831r01qsvr2a0740"},  # DataEngine配置
         "model_config": {
-            "model": "deepseek-llm-7b",  # DeepSeek模型特有的配置
+            "model": "deepseek-chat",  # DeepSeek模型特有的配置
             "temperature": 0.5
-        }
+            }
     },
     model_type="deepseek"  # 指定使用DeepSeek网关
 )
