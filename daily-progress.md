@@ -20,6 +20,10 @@
     D --> H[RiskUtils]
     E --> I[MplFinanceUtils]
 - 先实现了StrategyEngine的利润表策略，以此为demo后续开始aiagent过程。
+- TestStrategyEngine测试获取NVDA的财报利润表。
 
 ## 2025-7-11
+- 设计模式设计agents，了解agents原有结构，支持多种模式，配置实现分开，支持依赖注入 dataengine和strategyengine
+- ds代码开发设计模式
+- 类图，文件结构图 
 
