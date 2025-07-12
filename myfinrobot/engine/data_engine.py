@@ -24,7 +24,7 @@ class DataEngine:
         返回: DataFrame/List/Dict等数据容器
         """
         # 具体实现代码
-        return self.get_historical_data("AAPL",start_date= "2025-07-01",end_date= "2025-07-31")
+        return self.get_historical_data("NVDA",start_date= "2025-01-01",end_date= "2025-07-31")
 
         
     def get_historical_data(self, symbol: str, **kwargs) -> pd.DataFrame:

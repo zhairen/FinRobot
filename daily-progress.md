@@ -27,4 +27,12 @@
 - ds代码开发设计模式
 - 类图，文件结构图 
 - 根据现在的文件结构、类图和功能需求，更正完善代码。Dataengine和srategyengine依赖注入，支持多种大模型。尽可能引用现在的agent_library,prompts,utils,workflow里现有的实现即可。更正错误和完善代码，除agent_library,prompts,utils,workflow 4个文件外，该agents文件夹下所有文件。
+- 测试dsapi完成初步模型回答。但原来agents功能可以生成pdf等，绘图等，显然更强大。
+
+## 2025-7-12
+- 继续完善aiagentengine
+- 研究agents文件夹下文件，英文翻译中文
+- agents的大模型明显还有生成图标和文件需要添加
+- 由于agents是核心，4个文件逐个细读拆解。
+- 后面还有的任务有，图表实现，fastapiweb端，数据库存储与查询。
 

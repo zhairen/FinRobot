@@ -49,7 +49,7 @@ class DataAnalysisAgent(Agent):
         prompt = analysis_prompt_template.format(
             task_type=task.type,
             parameters=task.parameters,
-            data_summary=data.head(5)  # 假设data是pandas DataFrame
+            data_summary=data  # 假设data是pandas DataFrame
         )
         DebugPrinter().debug_print(
             'Generated analysis prompt:',
