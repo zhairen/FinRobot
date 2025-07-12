@@ -24,6 +24,7 @@ class FinRobot(AssistantAgent):
     def __init__(
         self,
         agent_config: str | Dict[str, Any],
+        lang: str = 'en',  # 新增语言参数
         system_message: str | None = None,  # overwrites previous config
         toolkits: List[Callable | dict | type] = [],  # overwrites previous config
         proxy: UserProxyAgent | None = None,
