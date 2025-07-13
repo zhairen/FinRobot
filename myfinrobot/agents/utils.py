@@ -23,7 +23,15 @@ def order_trigger(sender, name, pattern):
 
 
 def order_message(pattern, recipient, messages, sender, config):
-    full_order = recipient.chat_messages_for_summary(sender)[-1]["content"]
+    # 修改为安全版本
+    full_order = "" 
+    messages = recipient.chat_messages_for_summary(sender)
+    if messages:
+        full_order = messages[-1]["content"]
+    else:
+        full_order = ""  # 或者处理为空消息的默认值
+
+    #full_order = recipient.chat_messages_for_summary(sender)[-1]["content"]
     pattern = rf"\[{pattern}\](?::)?\s*(.+?)(?=\n\[|$)"
     match = re.search(pattern, full_order, re.DOTALL)
     if match:

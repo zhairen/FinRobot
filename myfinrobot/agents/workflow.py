@@ -100,6 +100,19 @@ class FinRobot(AssistantAgent):
     def register_proxy(self, proxy):
         register_toolkits(self.toolkits, self, proxy)
 
+    # @author "FinRobot Coin"
+    def get_chat_history(self, agent: ConversableAgent) -> List[Dict]:
+        """
+        获取与指定代理的聊天历史
+        :param agent: 对话代理对象
+        :return: 聊天历史消息列表
+        """
+        # 确保有聊天历史记录
+        if not hasattr(self, 'chat_messages'):
+            self.chat_messages = {}
+            
+        # 返回与指定代理的聊天历史，如果没有则返回空列表
+        return self.chat_messages.get(agent, [])
 
 class SingleAssistantBase(ABC):
 

@@ -36,4 +36,8 @@
 - 由于agents是核心，4个文件逐个细读拆解。
 - 后面还有的任务有，图表实现，fastapiweb端，数据库存储与查询。
 - ai prompts请在test_aiagent中开发实现test_agentutils.py，测试使用该utils.py文件各功能。 需要构造一个示例场景，金融投资agent，展示如何配置智能体并使用这些工具函数。例如，创建一个组领导智能体和一个程序员智能体，当组长发送包含文件路径的消息时，触发instruction_message读取文件内容，并生成任务指令。然后，当组长发送特定格式的指令时，使用order_trigger检测并解析出具体任务内容。
+- 生成了测试单元代码，运行test_agentutils，实现barra cne6多因子模型
 
+## 2025-7-13
+- 插队实现外汇行情，以便后续和fastapi快速开发完成并上线
+- 
