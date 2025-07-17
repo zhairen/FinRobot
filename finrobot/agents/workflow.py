@@ -158,10 +158,12 @@ class SingleAssistant(SingleAssistantBase):
                 **kwargs,
             )
 
-        print("Current chat finished. Resetting agents ...")
-        self.reset()
+        #print("Current chat finished. Resetting agents ...")
+        #self.reset()
 
     def reset(self):
+        print("Current chat finished. Resetting agents ...")
+        
         self.user_proxy.reset()
         self.assistant.reset()
 
@@ -343,10 +345,12 @@ class MultiAssistantBase(ABC):
                 cache=cache if use_cache else None,
                 **kwargs,
             )
-        print("Current chat finished. Resetting agents ...")
-        self.reset()
+        #print("Current chat finished. Resetting agents ...")
+        #self.reset()
 
     def reset(self):
+        print("Current chat finished. Resetting agents ...")
+        
         self.user_proxy.reset()
         self.representative.reset()
         for agent in self.agents:

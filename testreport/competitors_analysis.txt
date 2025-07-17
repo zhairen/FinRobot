@@ -1,0 +1,126 @@
+
+
+0:
+CB: EBITDA Margin      0.22
+EV/EBITDA         10.05
+FCF Conversion     1.75
+Gross Margin       0.29
+ROIC              24.4%
+Revenue           56150
+Revenue Growth     None
+Name: 0, dtype: object
+ZION: EBITDA Margin     0.23
+EV/EBITDA         7.79
+FCF Conversion    1.46
+Gross Margin      0.61
+ROIC              6.2%
+Revenue           4993
+Revenue Growth    None
+Name: 0, dtype: object
+PNC: EBITDA Margin      0.22
+EV/EBITDA         12.31
+FCF Conversion     1.34
+Gross Margin       0.59
+ROIC               4.5%
+Revenue           33694
+Revenue Growth     None
+Name: 0, dtype: object
+
+
+1:
+CB: EBITDA Margin                    0.21
+EV/EBITDA                        9.98
+FCF Conversion                    1.4
+Gross Margin                     0.28
+ROIC                             4.8%
+Revenue                         50133
+Revenue Growth    (5013299999900, 1)%
+Name: 1, dtype: object
+ZION: EBITDA Margin                   0.22
+EV/EBITDA                        8.6
+FCF Conversion                   1.3
+Gross Margin                    0.65
+ROIC                            5.6%
+Revenue                         4624
+Revenue Growth    (462399999900, 1)%
+Name: 1, dtype: object
+PNC: EBITDA Margin                    0.22
+EV/EBITDA                        12.1
+FCF Conversion                   1.81
+Gross Margin                     0.65
+ROIC                             4.0%
+Revenue                         31901
+Revenue Growth    (3190099999900, 1)%
+Name: 1, dtype: object
+
+
+2:
+CB: EBITDA Margin                    0.17
+EV/EBITDA                       14.37
+FCF Conversion                   2.15
+Gross Margin                      1.0
+ROIC                             4.4%
+Revenue                         43124
+Revenue Growth    (4312399999900, 1)%
+Name: 2, dtype: object
+ZION: EBITDA Margin                   0.38
+EV/EBITDA                      13.03
+FCF Conversion                  1.62
+Gross Margin                    0.91
+ROIC                            5.1%
+Revenue                         3337
+Revenue Growth    (333699999900, 1)%
+Name: 2, dtype: object
+PNC: EBITDA Margin                    0.35
+EV/EBITDA                       11.01
+FCF Conversion                    1.5
+Gross Margin                     0.88
+ROIC                             5.8%
+Revenue                         23536
+Revenue Growth    (2353599999900, 1)%
+Name: 2, dtype: object
+
+
+3:
+CB: EBITDA Margin                    0.26
+EV/EBITDA                        9.42
+FCF Conversion                   1.31
+Gross Margin                      1.0
+ROIC                             6.4%
+Revenue                         40963
+Revenue Growth    (4096299999900, 1)%
+Name: 3, dtype: object
+ZION: EBITDA Margin                   0.48
+EV/EBITDA                       0.79
+FCF Conversion                  0.56
+Gross Margin                    1.07
+ROIC                           10.8%
+Revenue                         2970
+Revenue Growth    (296999999900, 1)%
+Name: 3, dtype: object
+PNC: EBITDA Margin                    0.44
+EV/EBITDA                        4.13
+FCF Conversion                   1.27
+Gross Margin                     1.01
+ROIC                             6.6%
+Revenue                         19698
+Revenue Growth    (1969799999900, 1)%
+Name: 3, dtype: object
+
+
+Resource: Financial metrics for CB and ['ZION', 'PNC'].
+
+Instruction: 
+Analyze the financial metrics for {company}/ticker_symbol and its competitors: {competitors} across multiple years (indicated as 0, 1, 2, 3, with 0 being the latest year and 3 the earliest year). Focus on the following metrics: EBITDA Margin, EV/EBITDA, FCF Conversion, Gross Margin, ROIC, Revenue, and Revenue Growth. 
+For each year: Year-over-Year Trends: Identify and discuss the trends for each metric from the earliest year (3) to the latest year (0) for {company}. But when generating analysis, you need to write 1: year 3 = year 2023, 2: year 2 = year 2022, 3: year 1 = year 2021 and 4: year 0 = year 2020. Highlight any significant improvements, declines, or stability in these metrics over time.
+Competitor Comparison: For each year, compare {company} against its {competitors} for each metric. Evaluate how {company} performs relative to its {competitors}, noting where it outperforms or lags behind.
+Metric-Specific Insights:
+
+EBITDA Margin: Discuss the profitability of {company} compared to its {competitors}, particularly in the most recent year.
+EV/EBITDA: Provide insights on the valuation and whether {company} is over or undervalued compared to its {competitors} in each year.
+FCF Conversion: Evaluate the cash flow efficiency of {company} relative to its {competitors} over time.
+Gross Margin: Analyze the cost efficiency and profitability in each year.
+ROIC: Discuss the return on invested capital and what it suggests about the company's efficiency in generating returns from its investments, especially focusing on recent trends.
+Revenue and Revenue Growth: Provide a comprehensive view of {company}’s revenue performance and growth trajectory, noting any significant changes or patterns.
+Conclusion: Summarize the overall financial health of {company} based on these metrics. Discuss how {company}’s performance over these years and across these metrics might justify or contradict its current market valuation (as reflected in the EV/EBITDA ratio).
+Avoid using any bullet points.

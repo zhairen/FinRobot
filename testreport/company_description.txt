@@ -1,0 +1,373 @@
+Resource: Resource: Company Name: Apple Inc.
+
+Business summary:
+ Item 1. Business 
+
+Company Background 
+
+The Company designs, manufactures and markets smartphones, personal computers, tablets, wearables and accessories, and sells a variety of related services. The Company&#8217;s fiscal year is the 52- or 53-week period that ends on the last Saturday of September. 
+
+Products 
+
+iPhone 
+
+iPhone &#174; is the Company&#8217;s line of smartphones based on its iOS operating system. The iPhone line includes iPhone 16 Pro, iPhone 16, iPhone 15, iPhone 14 and iPhone SE &#174; . 
+
+Mac 
+
+Mac &#174; is the Company&#8217;s line of personal computers based on its macOS &#174; operating system. The Mac line includes laptops MacBook Air &#174; and MacBook Pro &#174; , as well as desktops iMac &#174; , Mac mini &#174; , Mac Studio &#174; and Mac Pro &#174; . 
+
+iPad 
+
+iPad &#174; is the Company&#8217;s line of multipurpose tablets based on its iPadOS &#174; operating system. The iPad line includes iPad Pro &#174; , iPad Air &#174; , iPad and iPad mini &#174; . 
+
+Wearables, Home and Accessories 
+
+Wearables includes smartwatches, wireless headphones and spatial computers. The Company&#8217;s line of smartwatches, based on its watchOS &#174; operating system, includes Apple Watch Ultra &#174; 2, Apple Watch &#174; Series 10 and Apple Watch SE &#174; . The Company&#8217;s line of wireless headphones includes AirPods &#174; , AirPods Pro &#174; , AirPods Max &#174; and Beats &#174; products. Apple Vision Pro&#8482; is the Company&#8217;s first spatial computer based on its visionOS&#8482; operating system. 
+
+Home includes Apple TV &#174; , the Company&#8217;s media streaming and gaming device based on its tvOS &#174; operating system, and HomePod &#174; and HomePod mini &#174; , high-fidelity wireless smart speakers. 
+
+Accessories includes Apple-branded and third-party accessories. 
+
+Apple Inc. | 2024 Form 10-K | 1 
+
+Services 
+
+Advertising 
+
+The Company&#8217;s advertising services include third-party licensing arrangements and the Company&#8217;s own advertising platforms. 
+
+AppleCare 
+
+The Company offers a portfolio of fee-based service and support products under the AppleCare &#174; brand. The offerings provide priority access to Apple technical support, access to the global Apple authorized service network for repair and replacement services, and in many cases additional coverage for instances of accidental damage or theft and loss, depending on the country and type of product. 
+
+Cloud Services 
+
+The Company&#8217;s cloud services store and keep customers&#8217; content up-to-date and available across multiple Apple devices and Windows personal computers. 
+
+Digital Content 
+
+The Company operates various platforms, including the App Store &#174; , that allow customers to discover and download applications and digital content, such as books, music, video, games and podcasts. 
+
+The Company also offers digital content through subscription-based services, including Apple Arcade &#174; , a game subscription service; Apple Fitness+ SM , a personalized fitness service; Apple Music &#174; , which offers users a curated listening experience with on-demand radio stations; Apple News+ &#174; , a subscription news and magazine service; and Apple TV+ &#174; , which offers exclusive original content and live sports. 
+
+Payment Services 
+
+The Company offers payment services, including Apple Card &#174; , a co-branded credit card, and Apple Pay &#174; , a cashless payment service. 
+
+Segments 
+
+The Company manages its business primarily on a geographic basis. The Company&#8217;s reportable segments consist of the Americas, Europe, Greater China, Japan and Rest of Asia Pacific. Americas includes both North and South America. Europe includes European countries, as well as India, the Middle East and Africa. Greater China includes China mainland, Hong Kong and Taiwan. Rest of Asia Pacific includes Australia and those Asian countries not included in the Company&#8217;s other reportable segments. Although the reportable segments provide similar hardware and software products and similar services, each one is managed separately to better align with the location of the Company&#8217;s customers and distribution partners and the unique market dynamics of each geographic region. 
+
+Markets and Distribution 
+
+The Company&#8217;s customers are primarily in the consumer, small and mid-sized business, education, enterprise and government markets. The Company sells its products and resells third-party products in most of its major markets directly to customers through its retail and online stores and its direct sales force. The Company also employs a variety of indirect distribution channels, such as third-party cellular network carriers, wholesalers, retailers and resellers. During 2024, the Company&#8217;s net sales through its direct and indirect distribution channels accounted for 38% and 62%, respectively, of total net sales. 
+
+Competition 
+
+The markets for the Company&#8217;s products and services are highly competitive, and are characterized by aggressive price competition and resulting downward pressure on gross margins, frequent introduction of new products and services, short product life cycles, evolving industry standards, continual improvement in product price and performance characteristics, rapid adoption of technological advancements by competitors, and price sensitivity on the part of consumers and businesses. Many of the Company&#8217;s competitors seek to compete primarily through aggressive pricing and very low cost structures, and by imitating the Company&#8217;s products and infringing on its intellectual property. 
+
+Apple Inc. | 2024 Form 10-K | 2 
+
+The Company&#8217;s ability to compete successfully depends heavily on ensuring the continuing and timely introduction of innovative new products, services and technologies to the marketplace. The Company designs and develops nearly the entire solution for its products, including the hardware, operating system, numerous software applications and related services. Principal competitive factors important to the Company include price, product and service features (including security features), relative price and performance, product and service quality and reliability, design innovation, a strong third-party software and accessories ecosystem, marketing and distribution capability, service and support, and corporate reputation. 
+
+The Company is focused on expanding its market opportunities related to smartphones, personal computers, tablets, wearables and accessories, and services. The Company faces substantial competition in these markets from companies that have significant technical, marketing, distribution and other resources, as well as established hardware, software, and service offerings with large customer bases. In addition, some of the Company&#8217;s competitors have broader product lines, lower-priced products and a larger installed base of active devices. Competition has been particularly intense as competitors have aggressively cut prices and lowered product margins. Certain competitors have the resources, experience or cost structures to provide products at little or no profit or even at a loss. The Company&#8217;s services compete with business models that provide content to users for free and use illegitimate means to obtain third-party digital content and applications. The Company faces significant competition as competitors imitate the Company&#8217;s product features and applications within their products, or collaborate to offer integrated solutions that are more competitive than those they currently offer. 
+
+Supply of Components 
+
+Although most components essential to the Company&#8217;s business are generally available from multiple sources, certain components are currently obtained from single or limited sources. The Company also competes for various components with other participants in the markets for smartphones, personal computers, tablets, wearables and accessories. Therefore, many components used by the Company, including those that are available from multiple sources, are at times subject to industry-wide shortage and significant commodity pricing fluctuations. 
+
+The Company uses some custom components that are not commonly used by its competitors, and new products introduced by the Company often utilize custom components available from only one source. When a component or product uses new technologies, initial capacity constraints may exist until the suppliers&#8217; yields have matured or their manufacturing capacities have increased. The continued availability of these components at acceptable prices, or at all, may be affected if suppliers decide to concentrate on the production of common components instead of components customized to meet the Company&#8217;s requirements. 
+
+The Company has entered into agreements for the supply of many components; however, there can be no guarantee that the Company will be able to extend or renew these agreements on similar terms, or at all. 
+
+Research and Development 
+
+Because the industries in which the Company competes are characterized by rapid technological advances, the Company&#8217;s ability to compete successfully depends heavily upon its ability to ensure a continual and timely flow of competitive products, services and technologies to the marketplace. The Company continues to develop new technologies to enhance existing products and services, and to expand the range of its offerings through research and development (&#8220;R&#38;D&#8221;), licensing of intellectual property and acquisition of third-party businesses and technology. 
+
+Intellectual Property 
+
+The Company currently holds a broad collection of intellectual property rights relating to certain aspects of its hardware, accessories, software and services. This includes patents, designs, copyrights, trademarks, trade secrets and other forms of intellectual property rights in the U.S. and various foreign countries. Although the Company believes the ownership of such intellectual property rights is an important factor in differentiating its business and that its success does depend in part on such ownership, the Company relies primarily on the innovative skills, technical competence and marketing abilities of its personnel. 
+
+The Company regularly files patent, design, copyright and trademark applications to protect innovations arising from its research, development, design and marketing, and is currently pursuing thousands of applications around the world. Over time, the Company has accumulated a large portfolio of issued and registered intellectual property rights around the world. No single intellectual property right is solely responsible for protecting the Company&#8217;s products and services. The Company believes the duration of its intellectual property rights is adequate relative to the expected lives of its products and services. 
+
+In addition to Company-owned intellectual property, many of the Company&#8217;s products and services are designed to include intellectual property owned by third parties. It may be necessary in the future to seek or renew licenses relating to various aspects of the Company&#8217;s products, processes and services. While the Company has generally been able to obtain such licenses on commercially reasonable terms in the past, there is no guarantee that such licenses could be obtained in the future on reasonable terms or at all. 
+
+Apple Inc. | 2024 Form 10-K | 3 
+
+Business Seasonality and Product Introductions 
+
+The Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in part to seasonal holiday demand. Additionally, new product and service introductions can significantly impact net sales, cost of sales and operating expenses. The timing of product introductions can also impact the Company&#8217;s net sales to its indirect distribution channels as these channels are filled with new inventory following a product launch, and channel inventory of an older product often declines as the launch of a newer product approaches. Net sales can also be affected when consumers and distributors anticipate a product introduction. 
+
+Human Capital 
+
+The Company believes that its people play an important role in its success, and strives to attract, develop and retain the best talent. The Company works to create an inclusive, safe and supportive environment for all of its team members, so that its people can do the best work of their lives. As of September 28, 2024, the Company had approximately 164,000 full-time equivalent employees. 
+
+Compensation and Benefits 
+
+The Company believes that compensation should be competitive and equitable, and should enable employees to share in the Company&#8217;s success. The Company recognizes its people are most likely to thrive when they have the resources to meet their needs and the time and support to succeed in their professional and personal lives. In support of this, the Company offers a wide variety of benefits for employees around the world, including health, wellness and time away. 
+
+Growth and Development 
+
+The Company invests in resources to help its people develop and achieve their career goals. The Company offers programs through Apple University on leadership, management and influence, as well as Apple culture and values. Team members can also take advantage of online classes for business, technical and personal development, as well as learning opportunities to support their well-being. 
+
+Workplace Practices and Policies 
+
+The Company is an equal opportunity employer committed to inclusion and diversity and to providing a workplace free of harassment or discrimination. 
+
+Inclusion and Diversity 
+
+The Company is committed to its vision to build and sustain a more inclusive workforce that is representative of the communities it serves. The Company continues to work to increase diverse representation at every level, foster an inclusive culture, and support equitable pay and access to opportunity for all employees. 
+
+Engagement 
+
+The Company believes that open and honest communication among team members, managers and leaders helps create an open, collaborative work environment where everyone can contribute, grow and succeed. Team members are encouraged to come to their managers with questions, feedback or concerns, and the Company conducts surveys that gauge employee sentiment in areas like career development, manager performance and inclusivity. 
+
+Health and Safety 
+
+The Company is committed to protecting its team members everywhere it operates. The Company identifies potential workplace risks in order to develop measures to mitigate possible hazards. The Company supports employees with general safety, security and crisis management training, and by putting specific programs in place for those working in potentially high-hazard environments. Additionally, the Company works to protect the safety and security of its team members, visitors and customers through its global security team. 
+
+Apple Inc. | 2024 Form 10-K | 4 
+
+Available Information 
+
+The Company&#8217;s Annual Reports on Form 10-K, Quarterly Reports on Form 10-Q, Current Reports on Form 8-K, and amendments to reports filed pursuant to Sections 13(a) and 15(d) of the Securities Exchange Act of 1934, as amended (the &#8220;Exchange Act&#8221;), are filed with the U.S. Securities and Exchange Commission (the &#8220;SEC&#8221;). Such reports and other information filed by the Company with the SEC are available free of charge at investor.apple.com/investor-relations/sec-filings/default.aspx when such reports are available on the SEC&#8217;s website. The Company periodically provides certain information for investors on its corporate website, www.apple.com, and its investor relations website, investor.apple.com. This includes press releases and other information about financial performance, information on environmental, social and governance matters, and details related to the Company&#8217;s annual meeting of shareholders. The information contained on the websites referenced in this Form 10-K is not incorporated by reference into this filing. Further, the Company&#8217;s references to website URLs are intended to be inactive textual references only. 
+
+
+
+Management's Discussion and Analysis of Financial Condition and Results of Operations:
+ Item 7. Management&#8217;s Discussion and Analysis of Financial Condition and Results of Operations 
+
+The following discussion should be read in conjunction with the consolidated financial statements and accompanying notes included in Part II, Item 8 of this Form 10-K. This Item generally discusses 2024 and 2023 items and year-to-year comparisons between 2024 and 2023. Discussions of 2022 items and year-to-year comparisons between 2023 and 2022 are not included, and can be found in &#8220;Management&#8217;s Discussion and Analysis of Financial Condition and Results of Operations&#8221; in Part II, Item 7 of the Company&#8217;s Annual Report on Form 10-K for the fiscal year ended September 30, 2023. 
+
+Product, Service and Software Announcements 
+
+The Company announces new product, service and software offerings at various times during the year. Significant announcements during fiscal year 2024 included the following: 
+
+First Quarter 2024: 
+
+&#8226; MacBook Pro 14-in.; 
+
+&#8226; MacBook Pro 16-in.; and 
+
+&#8226; iMac. 
+
+Second Quarter 2024: 
+
+&#8226; MacBook Air 13-in.; and 
+
+&#8226; MacBook Air 15-in. 
+
+Third Quarter 2024: 
+
+&#8226; iPad Air; 
+
+&#8226; iPad Pro; 
+
+&#8226; iOS 18, macOS Sequoia, iPadOS 18, watchOS 11, visionOS 2 and tvOS 18, updates to the Company&#8217;s operating systems; and 
+
+&#8226; Apple Intelligence&#8482;, a personal intelligence system that uses generative models. 
+
+Fourth Quarter 2024: 
+
+&#8226; iPhone 16, iPhone 16 Plus, iPhone 16 Pro and iPhone 16 Pro Max; 
+
+&#8226; Apple Watch Series 10; and 
+
+&#8226; AirPods 4. 
+
+Fiscal Period 
+
+The Company&#8217;s fiscal year is the 52- or 53-week period that ends on the last Saturday of September. An additional week is included in the first fiscal quarter every five or six years to realign the Company&#8217;s fiscal quarters with calendar quarters, which occurred in the first quarter of 2023. The Company&#8217;s fiscal years 2024 and 2022 spanned 52 weeks each, whereas fiscal year 2023 spanned 53 weeks. 
+
+Macroeconomic Conditions 
+
+Macroeconomic conditions, including inflation, interest rates and currency fluctuations, have directly and indirectly impacted, and could in the future materially impact, the Company&#8217;s results of operations and financial condition. 
+
+Apple Inc. | 2024 Form 10-K | 21 
+
+Segment Operating Performance 
+
+The following table shows net sales by reportable segment for 2024, 2023 and 2022 (dollars in millions): 
+
+##TABLE_START 2024 Change 2023 Change 2022 Americas $ 167,045 3 % $ 162,560 (4) % $ 169,658 Europe 101,328 7 % 94,294 (1) % 95,118 Greater China 66,952 (8) % 72,559 (2) % 74,200 Japan 25,052 3 % 24,257 (7) % 25,977 Rest of Asia Pacific 30,658 4 % 29,615 1 % 29,375 Total net sales $ 391,035 2 % $ 383,285 (3) % $ 394,328 ##TABLE_END
+
+Americas 
+
+Americas net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services. 
+
+Europe 
+
+Europe net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services and iPhone. 
+
+Greater China 
+
+Greater China net sales decreased during 2024 compared to 2023 due primarily to lower net sales of iPhone and iPad. The weakness in the renminbi relative to the U.S. dollar had an unfavorable year-over-year impact on Greater China net sales during 2024. 
+
+Japan 
+
+Japan net sales increased during 2024 compared to 2023 due primarily to higher net sales of iPhone. The weakness in the yen relative to the U.S. dollar had an unfavorable year-over-year impact on Japan net sales during 2024. 
+
+Rest of Asia Pacific 
+
+Rest of Asia Pacific net sales increased during 2024 compared to 2023 due primarily to higher net sales of Services. The weakness in foreign currencies relative to the U.S. dollar had a net unfavorable year-over-year impact on Rest of Asia Pacific net sales during 2024. 
+
+Apple Inc. | 2024 Form 10-K | 22 
+
+Products and Services Performance 
+
+The following table shows net sales by category for 2024, 2023 and 2022 (dollars in millions): 
+
+##TABLE_START 2024 Change 2023 Change 2022 iPhone $ 201,183 &#8212; % $ 200,583 (2) % $ 205,489 Mac 29,984 2 % 29,357 (27) % 40,177 iPad 26,694 (6) % 28,300 (3) % 29,292 Wearables, Home and Accessories 37,005 (7) % 39,845 (3) % 41,241 
+
+Services (1) 
+
+96,169 13 % 85,200 9 % 78,129 Total net sales $ 391,035 2 % $ 383,285 (3) % $ 394,328 ##TABLE_END
+
+(1) Services net sales include amortization of the deferred value of services bundled in the sales price of certain products. 
+
+iPhone 
+
+iPhone net sales were relatively flat during 2024 compared to 2023. 
+
+Mac 
+
+Mac net sales increased during 2024 compared to 2023 due primarily to higher net sales of laptops. 
+
+iPad 
+
+iPad net sales decreased during 2024 compared to 2023 due primarily to lower net sales of iPad Pro and the entry-level iPad models, partially offset by higher net sales of iPad Air. 
+
+Wearables, Home and Accessories 
+
+Wearables, Home and Accessories net sales decreased during 2024 compared to 2023 due primarily to lower net sales of Wearables and Accessories. 
+
+Services 
+
+Services net sales increased during 2024 compared to 2023 due primarily to higher net sales from advertising, the App Store &#174; and cloud services. 
+
+Apple Inc. | 2024 Form 10-K | 23 
+
+Gross Margin 
+
+Products and Services gross margin and gross margin percentage for 2024, 2023 and 2022 were as follows (dollars in millions): 
+
+##TABLE_START 2024 2023 2022 Gross margin: Products $ 109,633 $ 108,803 $ 114,728 Services 71,050 60,345 56,054 Total gross margin $ 180,683 $ 169,148 $ 170,782 ##TABLE_END
+
+##TABLE_START Gross margin percentage: Products 37.2 % 36.5 % 36.3 % Services 73.9 % 70.8 % 71.7 % Total gross margin percentage 46.2 % 44.1 % 43.3 % ##TABLE_END
+
+Products Gross Margin 
+
+Products gross margin and Products gross margin percentage increased during 2024 compared to 2023 due to cost savings, partially offset by a different Products mix and the weakness in foreign currencies relative to the U.S. dollar. 
+
+Services Gross Margin 
+
+Services gross margin increased during 2024 compared to 2023 due primarily to higher Services net sales. 
+
+Services gross margin percentage increased during 2024 compared to 2023 due to a different Services mix. 
+
+The Company&#8217;s future gross margins can be impacted by a variety of factors, as discussed in Part I, Item 1A of this Form 10-K under the heading &#8220;Risk Factors.&#8221; As a result, the Company believes, in general, gross margins will be subject to volatility and downward pressure. 
+
+Operating Expenses 
+
+Operating expenses for 2024, 2023 and 2022 were as follows (dollars in millions): 
+
+##TABLE_START 2024 Change 2023 Change 2022 Research and development $ 31,370 5 % $ 29,915 14 % $ 26,251 Percentage of total net sales 8 % 8 % 7 % Selling, general and administrative $ 26,097 5 % $ 24,932 (1) % $ 25,094 Percentage of total net sales 7 % 7 % 6 % Total operating expenses $ 57,467 5 % $ 54,847 7 % $ 51,345 Percentage of total net sales 15 % 14 % 13 % ##TABLE_END
+
+Research and Development 
+
+The growth in R&#38;D expense during 2024 compared to 2023 was driven primarily by increases in headcount-related expenses. 
+
+Selling, General and Administrative 
+
+Selling, general and administrative expense increased $1.2 billion during 2024 compared to 2023. 
+
+Apple Inc. | 2024 Form 10-K | 24 
+
+Provision for Income Taxes 
+
+Provision for income taxes, effective tax rate and statutory federal income tax rate for 2024, 2023 and 2022 were as follows (dollars in millions): 
+
+##TABLE_START 2024 2023 2022 Provision for income taxes $ 29,749 $ 16,741 $ 19,300 Effective tax rate 24.1 % 14.7 % 16.2 % Statutory federal income tax rate 21 % 21 % 21 % ##TABLE_END
+
+The Company&#8217;s effective tax rate for 2024 was higher than the statutory federal income tax rate due primarily to a one-time income tax charge of $10.2 billion, net, related to the State Aid Decision (refer to Note 7, &#8220;Income Taxes&#8221; in the Notes to Consolidated Financial Statements in Part II, Item 8 of this Form 10-K) and state income taxes, partially offset by a lower effective tax rate on foreign earnings, the impact of the U.S. federal R&#38;D credit, and tax benefits from share-based compensation. 
+
+The Company&#8217;s effective tax rate for 2024 was higher compared to 2023 due primarily to a one-time income tax charge of $10.2 billion, net, related to the State Aid Decision, a higher effective tax rate on foreign earnings and lower tax benefits from share-based compensation. 
+
+Liquidity and Capital Resources 
+
+The Company believes its balances of unrestricted cash, cash equivalents and marketable securities, which totaled $140.8 billion as of September 28, 2024, along with cash generated by ongoing operations and continued access to debt markets, will be sufficient to satisfy its cash requirements and capital return program over the next 12 months and beyond. 
+
+The Company&#8217;s material cash requirements include the following contractual obligations: 
+
+Debt 
+
+As of September 28, 2024, the Company had outstanding fixed-rate notes with varying maturities for an aggregate principal amount of $97.3 billion (collectively the &#8220;Notes&#8221;), with $10.9 billion payable within 12 months. Future interest payments associated with the Notes total $38.5 billion, with $2.6 billion payable within 12 months. 
+
+The Company also issues unsecured short-term promissory notes pursuant to a commercial paper program. As of September 28, 2024, the Company had $10.0 billion of commercial paper outstanding, all of which was payable within 12 months. 
+
+Leases 
+
+The Company has lease arrangements for certain equipment and facilities, including corporate, data center, manufacturing and retail space. As of September 28, 2024, the Company had fixed lease payment obligations of $15.6 billion, with $2.0 billion payable within 12 months. 
+
+Manufacturing Purchase Obligations 
+
+The Company utilizes several outsourcing partners to manufacture subassemblies for the Company&#8217;s products and to perform final assembly and testing of finished products. The Company also obtains individual components for its products from a wide variety of individual suppliers. As of September 28, 2024, the Company had manufacturing purchase obligations of $53.0 billion, with $52.9 billion payable within 12 months. 
+
+Other Purchase Obligations 
+
+The Company&#8217;s other purchase obligations primarily consist of noncancelable obligations to acquire capital assets, including assets related to product manufacturing, and noncancelable obligations related to supplier arrangements, licensed intellectual property and content, and distribution rights. As of September 28, 2024, the Company had other purchase obligations of $12.0 billion, with $4.1 billion payable within 12 months. 
+
+Deemed Repatriation Tax Payable 
+
+As of September 28, 2024, the balance of the deemed repatriation tax payable imposed by the U.S. Tax Cuts and Jobs Act of 2017 (the &#8220;TCJA&#8221;) was $16.5 billion, with $7.2 billion expected to be paid within 12 months. 
+
+Apple Inc. | 2024 Form 10-K | 25 
+
+State Aid Decision Tax Payable 
+
+As of September 28, 2024, the Company had an obligation to pay &#8364;14.2 billion or $15.8 billion to Ireland in connection with the State Aid Decision, all of which was expected to be paid within 12 months. The funds necessary to settle the obligation were held in escrow as of September 28, 2024, and restricted from general use. 
+
+Capital Return Program 
+
+In addition to its contractual cash requirements, the Company has an authorized share repurchase program. The program does not obligate the Company to acquire a minimum amount of shares. As of September 28, 2024, the Company&#8217;s quarterly cash dividend was $0.25 per share. The Company intends to increase its dividend on an annual basis, subject to declaration by the Board. 
+
+In May 2024, the Company announced a new share repurchase program of up to $110 billion and raised its quarterly dividend from $0.24 to $0.25 per share beginning in May 2024. During 2024, the Company repurchased $95.0 billion of its common stock and paid dividends and dividend equivalents of $15.2 billion. 
+
+Recent Accounting Pronouncements 
+
+Income Taxes 
+
+In December 2023, the Financial Accounting Standards Board (the &#8220;FASB&#8221;) issued Accounting Standards Update (&#8220;ASU&#8221;) No. 2023-09, Income Taxes (Topic 740): Improvements to Income Tax Disclosures (&#8220;ASU 2023-09&#8221;), which will require the Company to disclose specified additional information in its income tax rate reconciliation and provide additional information for reconciling items that meet a quantitative threshold. ASU 2023-09 will also require the Company to disaggregate its income taxes paid disclosure by federal, state and foreign taxes, with further disaggregation required for significant individual jurisdictions. The Company will adopt ASU 2023-09 in its fourth quarter of 2026 using a prospective transition method. 
+
+Segment Reporting 
+
+In November 2023, the FASB issued ASU No. 2023-07, Segment Reporting (Topic 280): Improvements to Reportable Segment Disclosures (&#8220;ASU 2023-07&#8221;), which will require the Company to disclose segment expenses that are significant and regularly provided to the Company&#8217;s chief operating decision maker (&#8220;CODM&#8221;). In addition, ASU 2023-07 will require the Company to disclose the title and position of its CODM and how the CODM uses segment profit or loss information in assessing segment performance and deciding how to allocate resources. The Company will adopt ASU 2023-07 in its fourth quarter of 2025 using a retrospective transition method. 
+
+Critical Accounting Estimates 
+
+The preparation of financial statements and related disclosures in conformity with U.S. generally accepted accounting principles (&#8220;GAAP&#8221;) and the Company&#8217;s discussion and analysis of its financial condition and operating results require the Company&#8217;s management to make judgments, assumptions and estimates that affect the amounts reported. Note 1, &#8220;Summary of Significant Accounting Policies&#8221; of the Notes to Consolidated Financial Statements in Part II, Item 8 of this Form 10-K describes the significant accounting policies and methods used in the preparation of the Company&#8217;s consolidated financial statements. Management bases its estimates on historical experience and on various other assumptions it believes to be reasonable under the circumstances, the results of which form the basis for making judgments about the carrying values of assets and liabilities. 
+
+Uncertain Tax Positions 
+
+The Company is subject to income taxes in the U.S. and numerous foreign jurisdictions. The evaluation of the Company&#8217;s uncertain tax positions involves significant judgment in the interpretation and application of GAAP and complex domestic and international tax laws, including the TCJA and the allocation of international taxation rights between countries. Although management believes the Company&#8217;s reserves are reasonable, no assurance can be given that the final outcome of these uncertainties will not be different from that reflected in the Company&#8217;s reserves. Reserves are adjusted considering changing facts and circumstances, such as the closing of a tax examination. Resolution of these uncertainties in a manner inconsistent with management&#8217;s expectations could have a material impact on the Company&#8217;s financial condition and operating results. 
+
+Legal and Other Contingencies 
+
+The Company is subject to various legal proceedings and claims that arise in the ordinary course of business, the outcomes of which are inherently uncertain. The Company records a liability when it is probable that a loss has been incurred and the amount is reasonably estimable, the determination of which requires significant judgment. Resolution of legal matters in a manner inconsistent with management&#8217;s expectations could have a material impact on the Company&#8217;s financial condition and operating results. 
+
+Apple Inc. | 2024 Form 10-K | 26 
+
+
+
+Instruction: 
+According to the given information, 
+1. Briefly describe the company overview and company’s industry, using the structure: "Founded in xxxx, 'company name' is a xxxx that provides .....
+2. Highlight core strengths and competitive advantages key products or services,
+3. Include topics about end market (geography), major customers (blue chip or not), market share for market position section,
+4. Identify current industry trends, opportunities, and challenges that influence the company’s strategy,
+5. Outline recent strategic initiatives such as product launches, acquisitions, or new partnerships, and describe the company's response to market conditions. 
+Less than 300 words.
+
+
+Instruction: Summarize the analysis, less than 130 words.

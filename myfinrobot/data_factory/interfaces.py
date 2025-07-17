@@ -24,6 +24,16 @@ class IFundamentalDataSource(ABC):
     @abstractmethod
     def get_company_news(self, symbol: str, **kwargs) -> pd.DataFrame: ...
 
+class IExtendedDataSource(ABC):
+    """抽象工厂接口"""
+    @abstractmethod
+    def create_stock_source(self) -> IStockDataSource: ...
+    
+    @abstractmethod
+    def create_fundamental_source(self) -> IFundamentalDataSource: ...
+
+
+
 class IDataSourceFactory(ABC):
     """抽象工厂接口"""
     @abstractmethod

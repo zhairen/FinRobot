@@ -36,8 +36,37 @@
 - 由于agents是核心，4个文件逐个细读拆解。
 - 后面还有的任务有，图表实现，fastapiweb端，数据库存储与查询。
 - ai prompts请在test_aiagent中开发实现test_agentutils.py，测试使用该utils.py文件各功能。 需要构造一个示例场景，金融投资agent，展示如何配置智能体并使用这些工具函数。例如，创建一个组领导智能体和一个程序员智能体，当组长发送包含文件路径的消息时，触发instruction_message读取文件内容，并生成任务指令。然后，当组长发送特定格式的指令时，使用order_trigger检测并解析出具体任务内容。
-- 生成了测试单元代码，运行test_agentutils，实现barra cne6多因子模型
+- 生成了测试单元代码，运行test_agentutils，实现barra cne6多因子模型,完成了本功能的测试
+- 后续继续test-agents那4个文件的测试
 
 ## 2025-7-13
 - 插队实现外汇行情，以便后续和fastapi快速开发完成并上线
-- 
+- prompts参考架构dataengine，strategyengine，agentengine 数据源，处理分析，大模型代理的过程，之前是股票，请按该过程添加外汇资产，并单独新建py文件。请给出架构设计，类图，功能需求和详细代码实现。
+
+## 2025-7-14
+- 添加了外汇代码，未开发测试
+
+## 2025-7-15
+- 熟悉外汇模块包含功能项
+- 暂停外汇模块开发
+
+## 2025-7-16
+- 完成测试验证test_agentutils最后一个函数不验证了，因为步骤和之前一样。
+- 继续测试验证test_agentworkflow
+- tradeview站看起来很强大
+- 垂直、深入、专项优势是什么
+- 初步完成了这几项，需要考虑将该agent如何并入fastapi的web项目中
+- 测试自行编写的test-agents示例代码特别慢，开始用tutorials_advanced里面的示例。熟悉代码和测试。
+
+## 2025-7-17
+- 运行了官方demo生成pdf  testreport testtutorial
+
+
+
+
+
+
+
+
+
+

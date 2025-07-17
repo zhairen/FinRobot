@@ -3,7 +3,8 @@ import requests
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
-from ..utils import decorate_all_methods, get_next_weekday
+from myfinrobot.debugprinter import DebugPrinter
+from myfinrobot.utils import decorate_all_methods, get_next_weekday
 
 # from finrobot.utils import decorate_all_methods, get_next_weekday
 from functools import wraps
@@ -251,4 +252,8 @@ if __name__ == "__main__":
     from finrobot.utils import register_keys_from_json
 
     register_keys_from_json("config_api_keys")
-    FMPUtils.get_sec_report("NEE", "2024")
+    res = FMPUtils.get_sec_report("NVDA", "2025")
+    DebugPrinter().debug_print(
+       "NVDA 2025 10-K Report URL",
+       res
+    )

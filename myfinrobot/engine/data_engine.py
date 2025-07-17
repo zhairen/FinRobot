@@ -12,6 +12,7 @@ from typing import Dict, Any
 from cachetools import TTLCache
 
 from myfinrobot.data_factory.source_factory import DataSourceFactory
+from myfinrobot.data_factory.forex_source import ForexDataSourceFactory, IForexDataSource  # 新增
 
 class DataEngine:
     """智能数据引擎"""
@@ -47,3 +48,26 @@ class DataEngine:
     def set_data_strategy(self, data_type: str, source_name: str):
         """运行时动态调整策略"""
         DataSourceFactory.set_strategy_rule(data_type, source_name)
+
+    def set_forex_source(self, source_type: str, config: Dict[str, Any]):
+        """运行时切换外汇数据源"""
+        self.forex_source_config = {"type": source_type, "config": config}
+
+    def get_forex_data(
+        self, symbol: str, data_type: str = "historical", **kwargs
+    ) -> pd.DataFrame:
+        """智能获取外汇数据（带缓存）"""
+        try:
+            source = ForexDataSourceFactory.create_source(
+                self.forex_source_config["type"],
+                self.forex_source_config["config"]
+            )
+            if data_type == "historical":
+                return source.get_historical_data(symbol, **kwargs)
+            elif data_type == "economic_events":
+                return source.get_economic_events(symbol.split("/")[0], **kwargs)
+            else:
+                raise ValueError(f"不支持的外汇数据类型：{data_type}")
+        except Exception as e:
+            logger.error(f"获取外汇数据失败（symbol={symbol}）：{str(e)}")
+            raise
