@@ -4,5 +4,6 @@
         "./myfinrobot/strategy_factory"
     ],
     "editor.fontSize": 22,
-    "editor.fontLigatures": false
+    "editor.fontLigatures": false,
+    "editor.tabCompletion": "on"
 }

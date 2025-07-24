@@ -126,7 +126,7 @@ class EnhancedFinancialUtilsTest(unittest.TestCase):
     
 
     # region 强化订单处理 Done
-    @unittest.skip("已测试通过暂时禁止")
+    #@unittest.skip("已测试通过暂时禁止")
     def test_complex_order_parsing(self):
         '''测试复杂金融模型解析'''
         test_order = {

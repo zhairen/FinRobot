@@ -20,7 +20,7 @@ def main():
 
     llm_config = {
             "config_list": [{
-                "model": "qwen-plus",
+                "model": "qwen-turbo",
                 "api_key": "sk-33e77da7a560490cbc6e053c91e2e6a0",
                 "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",  # DeepSeek API 端点  
                 "max_tokens": 1000,
@@ -48,7 +48,7 @@ def main():
         human_input_mode="TERMINATE",
     )
 
-    company = "AAPL"  
+    company = "WMT"  
     fyear = "2025"
 
     message = dedent(
@@ -56,31 +56,12 @@ def main():
         使用你已获得的工具，基于{company}的{ fyear }年10-K报告撰写一份年度报告，并将其格式化为PDF文件。
         请注意以下事项：
         - 所有内容（包括工具返回的原始数据、分析结论、表格标题等）必须完整翻译成中文。        
-        - 生成的HTML报告需包含以下完整结构（确保中文字体和编码生效）：
-          <!DOCTYPE html>
-          <html>
-          <head>
-              <meta charset="utf-8">  <!-- 强制UTF-8编码 -->
-              <title>{company}年度报告</title>
-              <style>
-                  body {{ 
-                      font-family: 'Noto Sans CJK SC', 'SimSun', sans-serif;  /* 双保险指定中文字体 */
-                      font-size: 14px; 
-                      line-height: 1.6; 
-                  }}
-              </style>
-          </head>
-          <body>
-              <!-- 报告内容 -->
-          </body>
-          </html>
         - 开始前需用中文明确说明你的工作方案（例如：先调用get_sec_report获取10-K报告链接→提取关键财务数据→分析核心指标→翻译所有英文内容→生成中文报告）。
         - 为保证清晰，需逐个使用工具（尤其是在请求指令时）。
         - 所有文件操作需在目录"{work_dir}"中完成。
-        - 生成的任何图片需在对话中展示。
         - 所有段落总字数大约在300-500字之间，但不超过1700字。        
         - 若工具返回英文数据（如10-K报告中的财务指标、段落描述），需先完整翻译成中文后再用于报告撰写。
-        - 生成PDF时需使用pdfkit库，调用pdfkit.from_string(html_template, pdf_path)生成PDF。 。
+        
     """
     )
 
@@ -89,6 +70,7 @@ def main():
     #fmp key1 BMVM2VVKROi7vjFnfBgQXC58C4bqMgF2
     #fmp key2 no056gp10mlfxJCOcIHCpjGuNgDD0KUp
     #fmp key3 0Eqyot3JziBs2Lfge2suyWOQWo3WyX7p
+    #fmp key4 nb4vIq9J0qQsqCqrMWkRhFmmDqXEB7gj
     
     pass
 

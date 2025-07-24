@@ -1,4 +1,4 @@
-from finrobot.data_source.earnings_calls_src.earningsData import get_earnings_transcript
+from earnings_calls_src.earningsData import get_earnings_transcript
 import re
 from langchain.schema import Document
 from tenacity import RetryError
@@ -11,43 +11,49 @@ def clean_speakers(speaker):
 
 
 def get_earnings_all_quarters_data(quarter: str, ticker: str, year: int):
-    docs = []
-    resp_dict = get_earnings_transcript(quarter, ticker, year)
+    print(f'[DEBUG] 开始处理季度数据 quarter={quarter}, ticker={ticker}, year={year}')
+    
+    if not all([quarter, ticker, year]):
+        print('[ERROR] 缺少必要参数')
+        return [], []
 
-    content = resp_dict["content"]
-    pattern = re.compile(r"\n(.*?):")
-    matches = pattern.finditer(content)
+    try:
+        print(f'[API REQUEST] 请求财报电话数据...')
+        resp_dict = get_earnings_transcript(quarter, ticker, year)
+        print(f'[API RESPONSE] 响应状态: {resp_dict.get("status", "unknown")}')
 
-    speakers_list = []
-    ranges = []
-    for match_ in matches:
-        # print(match.span())
-        span_range = match_.span()
-        # first_idx = span_range[0]
-        # last_idx = span_range[1]
-        ranges.append(span_range)
-        speakers_list.append(match_.group())
-    speakers_list = [clean_speakers(sl) for sl in speakers_list]
+        # 新增：直接使用earningsData返回的transcript_split结构化数据
+        transcript_split = resp_dict.get("transcript_split", [])
+        if not transcript_split:
+            print('[WARNING] 未获取到transcript_split数据')
+            return [], []
 
-    for idx, speaker in enumerate(speakers_list[:-1]):
-        start_range = ranges[idx][1]
-        end_range = ranges[idx + 1][0]
-        speaker_text = content[start_range + 1 : end_range]
+        # 初始化docs和speakers_list
+        docs = []
+        speakers_list = []
 
-        docs.append(
-            Document(
-                page_content=speaker_text,
-                metadata={"speaker": speaker, "quarter": quarter},
+        # 遍历transcript_split生成docs和speakers_list
+        for item in transcript_split:
+            speaker = item.get("speaker", "未知发言人")
+            text = item.get("text", "")
+            # 清洗发言人名称（与原有clean_speakers逻辑一致）
+            cleaned_speaker = clean_speakers(speaker)
+            speakers_list.append(cleaned_speaker)
+
+            # 构建Document对象（metadata包含speaker和quarter）
+            docs.append(
+                Document(
+                    page_content=text,
+                    metadata={"speaker": cleaned_speaker, "quarter": quarter}
+                )
             )
-        )
 
-    docs.append(
-        Document(
-            page_content=content[ranges[-1][1] :],
-            metadata={"speaker": speakers_list[-1], "quarter": quarter},
-        )
-    )
-    return docs, speakers_list
+        print(f'[DATA] 成功生成{len(docs)}条发言人对话记录')
+        return docs, speakers_list
+
+    except Exception as e:
+        print(f'[ERROR] 请求处理失败: {e}')
+        return [], []    
 
 
 def get_earnings_all_docs(ticker: str, year: int):

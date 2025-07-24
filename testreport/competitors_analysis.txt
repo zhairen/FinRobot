@@ -1,114 +1,146 @@
 
 
 0:
-CB: EBITDA Margin      0.22
-EV/EBITDA         10.05
-FCF Conversion     1.75
-Gross Margin       0.29
-ROIC              24.4%
-Revenue           56150
-Revenue Growth     None
+WMT: EBITDA Margin       0.04
+EV/EBITDA          28.64
+FCF Conversion      1.88
+Gross Margin        0.25
+ROIC               13.1%
+Revenue           680985
+Revenue Growth      None
 Name: 0, dtype: object
-ZION: EBITDA Margin     0.23
-EV/EBITDA         7.79
-FCF Conversion    1.46
-Gross Margin      0.61
-ROIC              6.2%
-Revenue           4993
-Revenue Growth    None
+TGT: EBITDA Margin       0.05
+EV/EBITDA           13.6
+FCF Conversion       1.8
+Gross Margin        0.28
+ROIC               11.1%
+Revenue           106566
+Revenue Growth      None
 Name: 0, dtype: object
-PNC: EBITDA Margin      0.22
-EV/EBITDA         12.31
-FCF Conversion     1.34
-Gross Margin       0.59
-ROIC               4.5%
-Revenue           33694
-Revenue Growth     None
+AMZN: EBITDA Margin       0.19
+EV/EBITDA          18.98
+FCF Conversion      1.96
+Gross Margin        0.49
+ROIC               13.3%
+Revenue           637959
+Revenue Growth      None
+Name: 0, dtype: object
+KR: EBITDA Margin       0.05
+EV/EBITDA           8.53
+FCF Conversion      2.17
+Gross Margin        0.23
+ROIC                8.2%
+Revenue           147123
+Revenue Growth      None
 Name: 0, dtype: object
 
 
 1:
-CB: EBITDA Margin                    0.21
-EV/EBITDA                        9.98
-FCF Conversion                    1.4
-Gross Margin                     0.28
-ROIC                             4.8%
-Revenue                         50133
-Revenue Growth    (5013299999900, 1)%
+WMT: EBITDA Margin                     0.06
+EV/EBITDA                        12.77
+FCF Conversion                     2.3
+Gross Margin                      0.24
+ROIC                             12.1%
+Revenue                         648125
+Revenue Growth    (64812499999900, 1)%
 Name: 1, dtype: object
-ZION: EBITDA Margin                   0.22
-EV/EBITDA                        8.6
-FCF Conversion                   1.3
-Gross Margin                    0.65
-ROIC                            5.6%
-Revenue                         4624
-Revenue Growth    (462399999900, 1)%
+TGT: EBITDA Margin                     0.08
+EV/EBITDA                         9.62
+FCF Conversion                    2.08
+Gross Margin                      0.28
+ROIC                             11.9%
+Revenue                         107412
+Revenue Growth    (10741199999900, 1)%
 Name: 1, dtype: object
-PNC: EBITDA Margin                    0.22
-EV/EBITDA                        12.1
-FCF Conversion                   1.81
-Gross Margin                     0.65
-ROIC                             4.0%
-Revenue                         31901
-Revenue Growth    (3190099999900, 1)%
+AMZN: EBITDA Margin                     0.16
+EV/EBITDA                        18.21
+FCF Conversion                    2.79
+Gross Margin                      0.47
+ROIC                              8.2%
+Revenue                         574785
+Revenue Growth    (57478499999900, 1)%
+Name: 1, dtype: object
+KR: EBITDA Margin                     0.05
+EV/EBITDA                         7.18
+FCF Conversion                    3.14
+Gross Margin                      0.22
+ROIC                              6.7%
+Revenue                         150039
+Revenue Growth    (15003899999900, 1)%
 Name: 1, dtype: object
 
 
 2:
-CB: EBITDA Margin                    0.17
-EV/EBITDA                       14.37
-FCF Conversion                   2.15
-Gross Margin                      1.0
-ROIC                             4.4%
-Revenue                         43124
-Revenue Growth    (4312399999900, 1)%
+WMT: EBITDA Margin                     0.05
+EV/EBITDA                         14.7
+FCF Conversion                    2.47
+Gross Margin                      0.24
+ROIC                              8.6%
+Revenue                         611289
+Revenue Growth    (61128899999900, 1)%
 Name: 2, dtype: object
-ZION: EBITDA Margin                   0.38
-EV/EBITDA                      13.03
-FCF Conversion                  1.62
-Gross Margin                    0.91
-ROIC                            5.1%
-Revenue                         3337
-Revenue Growth    (333699999900, 1)%
+TGT: EBITDA Margin                     0.06
+EV/EBITDA                        14.18
+FCF Conversion                    1.45
+Gross Margin                      0.25
+ROIC                              9.1%
+Revenue                         109120
+Revenue Growth    (10911999999900, 1)%
 Name: 2, dtype: object
-PNC: EBITDA Margin                    0.35
-EV/EBITDA                       11.01
-FCF Conversion                    1.5
-Gross Margin                     0.88
-ROIC                             5.8%
-Revenue                         23536
-Revenue Growth    (2353599999900, 1)%
+AMZN: EBITDA Margin                     0.07
+EV/EBITDA                        24.56
+FCF Conversion                  -17.18
+Gross Margin                      0.44
+ROIC                              1.8%
+Revenue                         513983
+Revenue Growth    (51398299999900, 1)%
+Name: 2, dtype: object
+KR: EBITDA Margin                     0.05
+EV/EBITDA                         7.37
+FCF Conversion                    1.92
+Gross Margin                      0.21
+ROIC                              9.3%
+Revenue                         148258
+Revenue Growth    (14825799999900, 1)%
 Name: 2, dtype: object
 
 
 3:
-CB: EBITDA Margin                    0.26
-EV/EBITDA                        9.42
-FCF Conversion                   1.31
-Gross Margin                      1.0
-ROIC                             6.4%
-Revenue                         40963
-Revenue Growth    (4096299999900, 1)%
+WMT: EBITDA Margin                     0.06
+EV/EBITDA                        11.83
+FCF Conversion                    1.77
+Gross Margin                      0.25
+ROIC                             11.9%
+Revenue                         572754
+Revenue Growth    (57275399999900, 1)%
 Name: 3, dtype: object
-ZION: EBITDA Margin                   0.48
-EV/EBITDA                       0.79
-FCF Conversion                  0.56
-Gross Margin                    1.07
-ROIC                           10.8%
-Revenue                         2970
-Revenue Growth    (296999999900, 1)%
+TGT: EBITDA Margin                     0.11
+EV/EBITDA                         9.74
+FCF Conversion                    1.24
+Gross Margin                      0.29
+ROIC                             21.5%
+Revenue                         106005
+Revenue Growth    (10600499999900, 1)%
 Name: 3, dtype: object
-PNC: EBITDA Margin                    0.44
-EV/EBITDA                        4.13
-FCF Conversion                   1.27
-Gross Margin                     1.01
-ROIC                             6.6%
-Revenue                         19698
-Revenue Growth    (1969799999900, 1)%
+AMZN: EBITDA Margin                     0.16
+EV/EBITDA                        23.76
+FCF Conversion                    1.39
+Gross Margin                      0.42
+ROIC                              7.8%
+Revenue                         469822
+Revenue Growth    (46982199999900, 1)%
+Name: 3, dtype: object
+KR: EBITDA Margin                     0.04
+EV/EBITDA                         8.41
+FCF Conversion                    3.74
+Gross Margin                      0.22
+ROIC                              8.3%
+Revenue                         137888
+Revenue Growth    (13788799999900, 1)%
 Name: 3, dtype: object
 
 
-Resource: Financial metrics for CB and ['ZION', 'PNC'].
+Resource: Financial metrics for WMT and ['TGT', 'AMZN', 'KR'].
 
 Instruction: 
 Analyze the financial metrics for {company}/ticker_symbol and its competitors: {competitors} across multiple years (indicated as 0, 1, 2, 3, with 0 being the latest year and 3 the earliest year). Focus on the following metrics: EBITDA Margin, EV/EBITDA, FCF Conversion, Gross Margin, ROIC, Revenue, and Revenue Growth. 

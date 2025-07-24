@@ -1,0 +1,158 @@
+
+
+0:
+CB: EBITDA Margin      0.22
+EV/EBITDA         10.05
+FCF Conversion     1.75
+Gross Margin       0.29
+ROIC              24.4%
+Revenue           56150
+Revenue Growth     None
+Name: 0, dtype: object
+ALL: EBITDA Margin       0.1
+EV/EBITDA          8.69
+FCF Conversion     1.91
+Gross Margin       0.24
+ROIC               4.4%
+Revenue           64115
+Revenue Growth     None
+Name: 0, dtype: object
+MCO: EBITDA Margin      0.47
+EV/EBITDA         27.41
+FCF Conversion     1.38
+Gross Margin       0.73
+ROIC              17.3%
+Revenue            7088
+Revenue Growth     None
+Name: 0, dtype: object
+HIG: EBITDA Margin      0.17
+EV/EBITDA          8.98
+FCF Conversion      1.9
+Gross Margin       0.15
+ROIC              25.0%
+Revenue           26384
+Revenue Growth     None
+Name: 0, dtype: object
+
+
+1:
+CB: EBITDA Margin                    0.21
+EV/EBITDA                        9.98
+FCF Conversion                    1.4
+Gross Margin                     0.28
+ROIC                             4.8%
+Revenue                         50133
+Revenue Growth    (5013299999900, 1)%
+Name: 1, dtype: object
+ALL: EBITDA Margin                    0.01
+EV/EBITDA                       59.82
+FCF Conversion                 -22.49
+Gross Margin                     0.13
+ROIC                             0.0%
+Revenue                         57090
+Revenue Growth    (5708999999900, 1)%
+Name: 1, dtype: object
+MCO: EBITDA Margin                   0.44
+EV/EBITDA                      29.48
+FCF Conversion                  1.34
+Gross Margin                    0.71
+ROIC                           14.4%
+Revenue                         5916
+Revenue Growth    (591599999900, 1)%
+Name: 1, dtype: object
+HIG: EBITDA Margin                    0.16
+EV/EBITDA                         7.7
+FCF Conversion                   1.69
+Gross Margin                     0.13
+ROIC                             4.1%
+Revenue                         24330
+Revenue Growth    (2432999999900, 1)%
+Name: 1, dtype: object
+
+
+2:
+CB: EBITDA Margin                    0.17
+EV/EBITDA                       14.37
+FCF Conversion                   2.15
+Gross Margin                      1.0
+ROIC                             4.4%
+Revenue                         43124
+Revenue Growth    (4312399999900, 1)%
+Name: 2, dtype: object
+ALL: EBITDA Margin                   -0.01
+EV/EBITDA                      -67.91
+FCF Conversion                  -3.97
+Gross Margin                     0.13
+ROIC                            -1.1%
+Revenue                         51602
+Revenue Growth    (5160199999900, 1)%
+Name: 2, dtype: object
+MCO: EBITDA Margin                   0.43
+EV/EBITDA                      21.39
+FCF Conversion                  1.07
+Gross Margin                    0.71
+ROIC                           12.1%
+Revenue                         5468
+Revenue Growth    (546799999900, 1)%
+Name: 2, dtype: object
+HIG: EBITDA Margin                    0.14
+EV/EBITDA                        9.29
+FCF Conversion                    2.2
+Gross Margin                     0.09
+ROIC                             2.4%
+Revenue                         21854
+Revenue Growth    (2185399999900, 1)%
+Name: 2, dtype: object
+
+
+3:
+CB: EBITDA Margin                    0.26
+EV/EBITDA                        9.42
+FCF Conversion                   1.31
+Gross Margin                      1.0
+ROIC                             6.4%
+Revenue                         40963
+Revenue Growth    (4096299999900, 1)%
+Name: 3, dtype: object
+ALL: EBITDA Margin                    0.16
+EV/EBITDA                        5.32
+FCF Conversion                   3.17
+Gross Margin                     0.28
+ROIC                             5.5%
+Revenue                         50653
+Revenue Growth    (5065299999900, 1)%
+Name: 3, dtype: object
+MCO: EBITDA Margin                    0.5
+EV/EBITDA                      23.13
+FCF Conversion                  0.91
+Gross Margin                    0.74
+ROIC                           18.4%
+Revenue                         6218
+Revenue Growth    (621799999900, 1)%
+Name: 3, dtype: object
+HIG: EBITDA Margin                    0.18
+EV/EBITDA                        7.57
+FCF Conversion                   1.73
+Gross Margin                     0.11
+ROIC                             2.0%
+Revenue                         21649
+Revenue Growth    (2164899999900, 1)%
+Name: 3, dtype: object
+
+
+Resource: Financial metrics for CB and ['ALL', 'MCO', 'HIG'].
+
+Instruction: 
+Analyze the financial metrics for {company}/ticker_symbol and its competitors: {competitors} across multiple years (indicated as 0, 1, 2, 3, with 0 being the latest year and 3 the earliest year). Focus on the following metrics: EBITDA Margin, EV/EBITDA, FCF Conversion, Gross Margin, ROIC, Revenue, and Revenue Growth. 
+For each year: Year-over-Year Trends: Identify and discuss the trends for each metric from the earliest year (3) to the latest year (0) for {company}. But when generating analysis, you need to write 1: year 3 = year 2023, 2: year 2 = year 2022, 3: year 1 = year 2021 and 4: year 0 = year 2020. Highlight any significant improvements, declines, or stability in these metrics over time.
+Competitor Comparison: For each year, compare {company} against its {competitors} for each metric. Evaluate how {company} performs relative to its {competitors}, noting where it outperforms or lags behind.
+Metric-Specific Insights:
+
+EBITDA Margin: Discuss the profitability of {company} compared to its {competitors}, particularly in the most recent year.
+EV/EBITDA: Provide insights on the valuation and whether {company} is over or undervalued compared to its {competitors} in each year.
+FCF Conversion: Evaluate the cash flow efficiency of {company} relative to its {competitors} over time.
+Gross Margin: Analyze the cost efficiency and profitability in each year.
+ROIC: Discuss the return on invested capital and what it suggests about the company's efficiency in generating returns from its investments, especially focusing on recent trends.
+Revenue and Revenue Growth: Provide a comprehensive view of {company}’s revenue performance and growth trajectory, noting any significant changes or patterns.
+Conclusion: Summarize the overall financial health of {company} based on these metrics. Discuss how {company}’s performance over these years and across these metrics might justify or contradict its current market valuation (as reflected in the EV/EBITDA ratio).
+Avoid using any bullet points.

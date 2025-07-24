@@ -1,5 +1,7 @@
 from typing import Annotated
 
+from myfinrobot.functional.json_parse import parse_relaxed_json
+
 class TextUtils:
 
     def check_text_length(
@@ -17,3 +19,14 @@ class TextUtils:
             return f"Text length {length} is less than the minimum length of {min_length}."
         else:
             return f"Text length {length} is within the expected range."
+    
+    def fix_relaxed_json(json_string: str) -> str:        
+        """
+        Parse a JSON string that may have missing closing quotes or braces.
+        Attempts to correct these issues and returns a valid JSON string or the original string if it cannot be parsed.
+        """
+        try:
+            return parse_relaxed_json(json_string)
+        except:
+            return json_string  # Return the original string if parsing fails
+    

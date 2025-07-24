@@ -1,6 +1,15 @@
-from finrobot.data_source import *
-from finrobot.functional import *
+from myfinrobot.data_source import *
+from myfinrobot.data_source.finnhub_utils import FinnHubUtils
+from myfinrobot.data_source.fmp_utils import FMPUtils
+from myfinrobot.data_source.yfinance_utils import YFinanceUtils
+from myfinrobot.functional import *
 from textwrap import dedent
+
+from myfinrobot.functional.charting import ReportChartUtils
+from myfinrobot.functional.coding import IPythonUtils
+from myfinrobot.functional.reportlab import ReportLabUtils
+from myfinrobot.functional.text import TextUtils
+
 
 library = [
     {
@@ -69,13 +78,16 @@ library = [
             """
         ),
         "toolkits": [
-            FMPUtils.get_sec_report,  # Retrieve SEC report url and filing date
+            FMPUtils.get_sec_report,  # Retrieve SEC report url and filing date """Get the url and filing date of the 10-K report for a given stock and year"""
             IPythonUtils.display_image,  # Display image in IPython
             TextUtils.check_text_length,  # Check text length
-            ReportLabUtils.build_annual_report,  # Build annual report in designed pdf format
+            ReportLabUtils.build_annual_report, #English version, Default Version, Build annual report in designed pdf format
+            
             ReportAnalysisUtils,  # Expert Knowledge for Report Analysis
-            ReportChartUtils,  # Expert Knowledge for Report Chart Plotting
+            ReportChartUtils , # Expert Knowledge for Report Chart Plotting
+            TextUtils.fix_relaxed_json # provides a function to parse JSON strings that may have missing closing quotes or braces.It attempts to correct these issues and returns a valid JSON string or the original string if it cannot
         ],
     },
 ]
+#ReportLabUtils.build_annual_report_cn,  #Chinese version, Build annual report in designed pdf format
 library = {d["name"]: d for d in library}

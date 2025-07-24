@@ -159,41 +159,45 @@ class FMPUtils:
 
         # Iterate over the last 'years' years of data
         for year_offset in range(years):
-            # Construct URL for income statement and ratios for each year
-            income_statement_url = f"{base_url}/income-statement/{ticker_symbol}?limit={years}&apikey={fmp_api_key}"
-            ratios_url = (
-                f"{base_url}/ratios/{ticker_symbol}?limit={years}&apikey={fmp_api_key}"
-            )
-            key_metrics_url = f"{base_url}/key-metrics/{ticker_symbol}?limit={years}&apikey={fmp_api_key}"
+            try:
+                # Construct URL for income statement and ratios for each year
+                income_statement_url = f"{base_url}/income-statement/{ticker_symbol}?limit={years}&apikey={fmp_api_key}"
+                ratios_url = (
+                    f"{base_url}/ratios/{ticker_symbol}?limit={years}&apikey={fmp_api_key}"
+                )
+                key_metrics_url = f"{base_url}/key-metrics/{ticker_symbol}?limit={years}&apikey={fmp_api_key}"
 
-            # Requesting data from the API
-            income_data = requests.get(income_statement_url).json()
-            key_metrics_data = requests.get(key_metrics_url).json()
-            ratios_data = requests.get(ratios_url).json()
+                # Requesting data from the API
+                income_data = requests.get(income_statement_url).json()
+                key_metrics_data = requests.get(key_metrics_url).json()
+                ratios_data = requests.get(ratios_url).json()
 
-            # Extracting needed metrics for each year
-            if income_data and key_metrics_data and ratios_data:
-                metrics = {
-                    "Revenue": round(income_data[year_offset]["revenue"] / 1e6),
-                    "Revenue Growth": "{}%".format(round(((income_data[year_offset]["revenue"] - income_data[year_offset - 1]["revenue"]) / income_data[year_offset - 1]["revenue"])*100,1)),
-                    "Gross Revenue": round(income_data[year_offset]["grossProfit"] / 1e6),
-                    "Gross Margin": round((income_data[year_offset]["grossProfit"] / income_data[year_offset]["revenue"]),2),
-                    "EBITDA": round(income_data[year_offset]["ebitda"] / 1e6),
-                    "EBITDA Margin": round((income_data[year_offset]["ebitdaratio"]),2),
-                    "FCF": round(key_metrics_data[year_offset]["enterpriseValue"] / key_metrics_data[year_offset]["evToOperatingCashFlow"] / 1e6),
-                    "FCF Conversion": round(((key_metrics_data[year_offset]["enterpriseValue"] / key_metrics_data[year_offset]["evToOperatingCashFlow"]) / income_data[year_offset]["netIncome"]),2),
-                    "ROIC":"{}%".format(round((key_metrics_data[year_offset]["roic"])*100,1)),
-                    "EV/EBITDA": round((key_metrics_data[year_offset][
-                        "enterpriseValueOverEBITDA"
-                    ]),2),
-                    "PE Ratio": round(ratios_data[year_offset]["priceEarningsRatio"],2),
-                    "PB Ratio": round(key_metrics_data[year_offset]["pbRatio"],2),
-                }
-                # Append the year and metrics to the DataFrame
-                # Extracting the year from the date
-                year = income_data[year_offset]["date"][:4]
-                df[year] = pd.Series(metrics)
-
+                # Extracting needed metrics for each year
+                if income_data and key_metrics_data and ratios_data:
+                    metrics = {
+                        "Revenue": round(income_data[year_offset]["revenue"] / 1e6),
+                        "Revenue Growth": "{}%".format(round(((income_data[year_offset]["revenue"] - income_data[year_offset - 1]["revenue"]) / income_data[year_offset - 1]["revenue"])*100,1)),
+                        "Gross Revenue": round(income_data[year_offset]["grossProfit"] / 1e6),
+                        "Gross Margin": round((income_data[year_offset]["grossProfit"] / income_data[year_offset]["revenue"]),2),
+                        "EBITDA": round(income_data[year_offset]["ebitda"] / 1e6),
+                        "EBITDA Margin": round((income_data[year_offset]["ebitdaratio"]),2),
+                        "FCF": round(key_metrics_data[year_offset]["enterpriseValue"] / key_metrics_data[year_offset]["evToOperatingCashFlow"] / 1e6),
+                        "FCF Conversion": round(((key_metrics_data[year_offset]["enterpriseValue"] / key_metrics_data[year_offset]["evToOperatingCashFlow"]) / income_data[year_offset]["netIncome"]),2),
+                        "ROIC":"{}%".format(round((key_metrics_data[year_offset]["roic"])*100,1)),
+                        "EV/EBITDA": round((key_metrics_data[year_offset][
+                            "enterpriseValueOverEBITDA"
+                        ]),2),
+                        "PE Ratio": round(ratios_data[year_offset]["priceEarningsRatio"],2),
+                        "PB Ratio": round(key_metrics_data[year_offset]["pbRatio"],2),
+                    }
+                    # Append the year and metrics to the DataFrame
+                    # Extracting the year from the date
+                    year = income_data[year_offset]["date"][:4]
+                    df[year] = pd.Series(metrics)
+            except Exception:
+                # Handle cases where data for the year is not available
+                print(f"Data for year offset {year_offset} is not available for {ticker_symbol}.")
+                continue
         df = df.sort_index(axis=1)
 
         return df

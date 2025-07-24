@@ -5,7 +5,7 @@ from datetime import timedelta, datetime
 
 from myfinrobot.data_source.fmp_utils import FMPUtils
 from myfinrobot.data_source.sec_utils import SECUtils
-from ..data_source.yfinance_utils import YFinanceUtils
+from myfinrobot.data_source.yfinance_utils import YFinanceUtils
 
 
 def combine_prompt(instruction, resource, table_str=None):
@@ -231,6 +231,16 @@ class ReportAnalysisUtils:
         Analyze financial metrics differences between a company and its competitors.
         Prepare a prompt for analysis and save it to a file.
         """
+        """
+        Input arguments Sample,
+        Parameters:
+        ticker_symbol: 'NVDA'
+        competitors: ['AMD', 'INTC', 'QUAL']
+        fyear: '2025'
+        save_path: '../report/get_competitors_analysis.txt'
+        returns:
+        instruction & resources saved to ../report/get_competitors_analysis.txt 
+        """
         # Retrieve financial data
         financial_data = FMPUtils.get_competitor_financial_metrics(ticker_symbol, competitors, years=4)
 
@@ -246,21 +256,21 @@ class ReportAnalysisUtils:
 
         # Prepare the instructions for analysis
         instruction = dedent(
-          """
-          Analyze the financial metrics for {company}/ticker_symbol and its competitors: {competitors} across multiple years (indicated as 0, 1, 2, 3, with 0 being the latest year and 3 the earliest year). Focus on the following metrics: EBITDA Margin, EV/EBITDA, FCF Conversion, Gross Margin, ROIC, Revenue, and Revenue Growth. 
-          For each year: Year-over-Year Trends: Identify and discuss the trends for each metric from the earliest year (3) to the latest year (0) for {company}. But when generating analysis, you need to write 1: year 3 = year 2023, 2: year 2 = year 2022, 3: year 1 = year 2021 and 4: year 0 = year 2020. Highlight any significant improvements, declines, or stability in these metrics over time.
-          Competitor Comparison: For each year, compare {company} against its {competitors} for each metric. Evaluate how {company} performs relative to its {competitors}, noting where it outperforms or lags behind.
-          Metric-Specific Insights:
+        """
+        Analyze the financial metrics for {company}/ticker_symbol and its competitors: {competitors} across multiple years (indicated as 0, 1, 2, 3, with 0 being the latest year and 3 the earliest year). Focus on the following metrics: EBITDA Margin, EV/EBITDA, FCF Conversion, Gross Margin, ROIC, Revenue, and Revenue Growth. 
+        For each year: Year-over-Year Trends: Identify and discuss the trends for each metric from the earliest year (3) to the latest year (0) for {company}. But when generating analysis, you need to write 1: year 3 = year 2023, 2: year 2 = year 2022, 3: year 1 = year 2021 and 4: year 0 = year 2020. Highlight any significant improvements, declines, or stability in these metrics over time.
+        Competitor Comparison: For each year, compare {company} against its {competitors} for each metric. Evaluate how {company} performs relative to its {competitors}, noting where it outperforms or lags behind.
+        Metric-Specific Insights:
 
-          EBITDA Margin: Discuss the profitability of {company} compared to its {competitors}, particularly in the most recent year.
-          EV/EBITDA: Provide insights on the valuation and whether {company} is over or undervalued compared to its {competitors} in each year.
-          FCF Conversion: Evaluate the cash flow efficiency of {company} relative to its {competitors} over time.
-          Gross Margin: Analyze the cost efficiency and profitability in each year.
-          ROIC: Discuss the return on invested capital and what it suggests about the company's efficiency in generating returns from its investments, especially focusing on recent trends.
-          Revenue and Revenue Growth: Provide a comprehensive view of {company}’s revenue performance and growth trajectory, noting any significant changes or patterns.
-          Conclusion: Summarize the overall financial health of {company} based on these metrics. Discuss how {company}’s performance over these years and across these metrics might justify or contradict its current market valuation (as reflected in the EV/EBITDA ratio).
-          Avoid using any bullet points.
-          """
+        EBITDA Margin: Discuss the profitability of {company} compared to its {competitors}, particularly in the most recent year.
+        EV/EBITDA: Provide insights on the valuation and whether {company} is over or undervalued compared to its {competitors} in each year.
+        FCF Conversion: Evaluate the cash flow efficiency of {company} relative to its {competitors} over time.
+        Gross Margin: Analyze the cost efficiency and profitability in each year.
+        ROIC: Discuss the return on invested capital and what it suggests about the company's efficiency in generating returns from its investments, especially focusing on recent trends.
+        Revenue and Revenue Growth: Provide a comprehensive view of {company}’s revenue performance and growth trajectory, noting any significant changes or patterns.
+        Conclusion: Summarize the overall financial health of {company} based on these metrics. Discuss how {company}’s performance over these years and across these metrics might justify or contradict its current market valuation (as reflected in the EV/EBITDA ratio).
+        Avoid using any bullet points.
+        """
         )
 
         # Combine the prompt
@@ -270,7 +280,7 @@ class ReportAnalysisUtils:
 
         # Save the instructions and resources to a file
         save_to_file(prompt, save_path)
-        
+       
         return f"instruction & resources saved to {save_path}"
         
     def analyze_business_highlights(
@@ -390,6 +400,12 @@ class ReportAnalysisUtils:
         # print(f"Over the past 6 months, the average daily trading volume for {ticker_symbol} was: {avg_daily_volume_6m:.2f}")
         rating, _ = YFinanceUtils.get_analyst_recommendations(ticker_symbol)
         target_price = FMPUtils.get_target_price(ticker_symbol, filing_date)
+        mkt_cap = FMPUtils.get_historical_market_cap(ticker_symbol, filing_date)
+        ccy = FMPUtils.get_historical_bvps(ticker_symbol, filing_date)
+        if mkt_cap is None:
+            mkt_cap = 0
+        if ccy is None:
+            ccy = 0
         result = {
             "Rating": rating,
             "Target Price": target_price,
@@ -398,13 +414,13 @@ class ReportAnalysisUtils:
             ),
             f"Closing Price ({info['currency']})": "{:.2f}".format(close_price),
             f"Market Cap ({info['currency']}mn)": "{:.2f}".format(
-                FMPUtils.get_historical_market_cap(ticker_symbol, filing_date) / 1e6
+               mkt_cap / 1e6
             ),
             f"52 Week Price Range ({info['currency']})": "{:.2f} - {:.2f}".format(
                 fiftyTwoWeekLow, fiftyTwoWeekHigh
             ),
             f"BVPS ({info['currency']})": "{:.2f}".format(
-                FMPUtils.get_historical_bvps(ticker_symbol, filing_date)
+                ccy
             ),
         }
         return result

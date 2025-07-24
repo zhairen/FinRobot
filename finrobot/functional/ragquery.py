@@ -20,6 +20,7 @@ def rag_database_earnings_call(
         
         #assert quarter in earnings_call_quarter_vals, "The quarter should be from Q1, Q2, Q3, Q4"
         earnings_docs, earnings_call_quarter_vals, speakers_list_1, speakers_list_2, speakers_list_3, speakers_list_4 = get_data(ticker=ticker,year=year,data_source='earnings_calls')
+        print(f"获取到{ticker}的财报电话数据，年份: {year}")
 
         emb_fn = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 
@@ -28,10 +29,13 @@ def rag_database_earnings_call(
         chunk_overlap=100,
         length_function=len,)
         earnings_calls_split_docs = text_splitter.split_documents(earnings_docs)
+        print(" current working directory:",os.getcwd())
 
-        earnings_call_db = Chroma.from_documents(earnings_calls_split_docs, emb_fn, persist_directory="./earnings-call-db",collection_name="earnings_call")
-
-
+        earnings_call_db = Chroma.from_documents(earnings_calls_split_docs,
+                    emb_fn, persist_directory="./earnings-call-db",
+                     collection_name="earnings_call")
+        print(" earnings_call_db:",earnings_call_db)
+        
         quarter_speaker_dict = {
         "Q1":speakers_list_1,
         "Q2":speakers_list_2,

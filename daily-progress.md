@@ -61,6 +61,46 @@
 ## 2025-7-17
 - 运行了官方demo生成pdf  testreport testtutorial
 
+## 2025-7-18
+- 生成了wmt 股票分析报告，支持中文
+- 了解到有个openbb和彭博类似的开源终端
+- 搭建个人平台 IP 系统 产品
+- 继续begin tutorial
+- 考虑怎么融入fastapi web端，进行web端支持的fintech的aigent的robot
+
+## 2025-7-29
+- 继续begin tutorial，升级maker-pdf
+
+## 2025-7-20
+- 升级maker-pdf github maker版不报错
+- 运行finance_llm
+
+## 2025-7-21
+- cashflow平台的model不错
+- nvda tulpia nvda
+
+## 2025-7-22
+- 保存requirement.
+- 运行成功agent_rag_earning_call.
+- 安装了windsurf 辅助编程AI
+- 多模型多chat
+
+## 2025-7-23
+- 了解了下整合入fastapi react full stack框架
+- ipynb
+- 再新建项目过程中要记录步骤，命令
+
+## 2025-7-24
+- 熟悉openbb和full-stack-fastapi后
+- 该finrobot初步均部署完成，小部分改造。
+- ai agent是两点
+
+## 2025-7-25
+- 暂停该项目，等我完成了前后端全栈的搭建
+- 再集成该ai agent 或openbb
+
+
+
 
 
 

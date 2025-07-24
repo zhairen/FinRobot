@@ -1,27 +1,30 @@
 import os
-
-os.environ["IN_STREAMLIT"] = "true"  # Avoid multiprocessing inside surya
-os.environ["PDFTEXT_CPU_WORKERS"] = "1"  # Avoid multiprocessing inside pdftext
+os.environ["IN_STREAMLIT"] = "true"
+os.environ["PDFTEXT_CPU_WORKERS"] = "1"
 SAVE_DIR = "output/SEC_EDGAR_FILINGS_MD"
 
-import pypdfium2  # Needs to be at the top to avoid warnings
+import pypdfium2
 from typing import Optional
 import torch.multiprocessing as mp
 from tqdm import tqdm
 import math
 
-from marker.convert import convert_single_pdf
-from marker.output import markdown_exists, save_markdown
-from marker.pdf.utils import find_filetype
-from marker.pdf.extract_text import get_length_of_text
-from marker.models import load_all_models
+# ========== 更新的导入部分 ==========
+from marker.renderers.markdown import MarkdownRenderer  # 直接引用模块路径
+# 修改导入语句
+from marker.providers.registry import provider_from_ext
+            
+from marker.converters.pdf import PdfConverter
+from marker.config.parser import ConfigParser
+from marker.models import create_model_dict
+# ==================================
+
 from marker.settings import settings
 from marker.logger import configure_logging
 import traceback
 import json
 
 configure_logging()
-SAVE_DIR = "output/SEC_EDGAR_FILINGS_MD"
 
 def worker_init(shared_model):
     global model_refs
@@ -35,36 +38,45 @@ def worker_exit():
 
 def process_single_pdf(args):
     filepath, out_folder, metadata, min_length = args
-
     fname = os.path.basename(filepath)
-    if markdown_exists(out_folder, fname):
+    output_path = os.path.join(out_folder, fname.replace('.pdf', '.md'))
+    if os.path.exists(output_path):
         return
-    if not filepath.endswith("pdf"): 
-        return
+
     try:
-        # Skip trying to convert files that don't have a lot of embedded text
-        # This can indicate that they were scanned, and not OCRed properly
-        # Usually these files are not recent/high-quality
         if min_length:
-            filetype = find_filetype(filepath)
-            if filetype == "other":
+            # 在文件处理逻辑中修改
+            # 修改文件类型检测逻辑
+            provider = provider_from_ext(file_path)
+            file_type = provider.__name__.replace('Provider', '').lower()  # 示例：PdfProvider -> pdf
+
+            # 调整支持类型验证
+            supported_types = ['pdf', 'doc', 'xls', 'ppt', 'epub', 'html']
+            if file_type not in supported_types:
+                #raise ValueError(f"不支持的文件类型: {file_type}")
+                print(f"不支持的文件类型: {file_type}")
                 return 0
 
             length = get_length_of_text(filepath)
             if length < min_length:
                 return
-        
-        full_text, images, out_metadata = convert_single_pdf(
-            filepath, model_refs, metadata=metadata
-        )
-        if len(full_text.strip()) > 0:
-            save_markdown(out_folder, fname, full_text, images, out_metadata)
+
+        # ========== 更新的转换流程 ==========
+        config = ConfigParser()
+        converter = PdfConverter(config)
+        rendered = converter.convert(filepath)
+        renderer = MarkdownRenderer(config=config)  # 确保参数传递
+        text = renderer.render(rendered)
+        # ==================================
+
+        if len(text.strip()) > 0:
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write(text)
         else:
-            print(f"Empty file: {filepath}.  Could not convert.")
+            print(f"Empty file: {filepath})")
     except Exception as e:
         print(f"Error converting {filepath}: {e}")
         print(traceback.format_exc())
-
 
 def run_marker_mp(
     in_folder,
@@ -139,19 +151,16 @@ def run_marker_mp(
     else:
         total_processes = int(total_processes)
 
-    mp.set_start_method("spawn")  # Required for CUDA, forkserver doesn't work
-    model_lst = load_all_models()
-
-    for model in model_lst:
-        if model is None:
-            continue
-
+    # ========== 更新的模型加载部分 ==========
+    config = ConfigParser()
+    model_dict = create_model_dict(config)
+    
+    mp.set_start_method("spawn")
+    for model in model_dict.values():
         if model.device.type == "mps":
-            raise ValueError(
-                "Cannot use MPS with torch multiprocessing share_memory.  You have to use CUDA or CPU.  Set the TORCH_DEVICE environment variable to change the device."
-            )
-
+            raise ValueError("MPS设备不支持多进程")
         model.share_memory()
+    # =====================================
 
     print(
         f"Converting {len(files_to_convert)} pdfs in chunk {chunk_idx + 1}/{num_chunks} with {total_processes} processes, and storing in {out_folder}"
@@ -161,9 +170,14 @@ def run_marker_mp(
         for f in files_to_convert
     ]
 
+    # ========== 更新的进程池初始化 ==========
     with mp.Pool(
-        processes=total_processes, initializer=worker_init, initargs=(model_lst,)
+        processes=total_processes,
+        initializer=worker_init,
+        initargs=(model_dict,)
     ) as pool:
+    # =====================================
+
         list(
             tqdm(
                 pool.imap(process_single_pdf, task_args),
@@ -176,4 +190,9 @@ def run_marker_mp(
         pool._worker_handler.terminate = worker_exit
 
     # Delete all CUDA tensors
+    # 新增资源清理
+    for model in model_dict.values():
+        if hasattr(model, 'close'):
+            model.close()
+    torch.cuda.empty_cache()
     del model_lst
